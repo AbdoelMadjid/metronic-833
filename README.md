@@ -28,10 +28,10 @@ Proyek ini berisi implementasi template admin **Metronic 8.3.3 Demo 1** pada **L
    cd metronic-833
    ```
 
-   Untuk mengambil versi rilis `v1.0.0` secara langsung:
+   Untuk mengambil versi rilis `v1.2.0` secara langsung:
 
    ```bash
-   git checkout v1.0.0
+   git checkout v1.2.0
    ```
 
 2. Pasang dependensi PHP dan buat file environment lokal:
@@ -103,4 +103,4 @@ Nama route untuk halaman Metronic menggunakan awalan `metronic.`, contohnya `met
 
 ## Dokumentasi
 
-Lihat [riwayat pembaruan proyek](docs/riwayat-pembaruan.md) untuk ringkasan integrasi, konversi halaman, rute, dan aset.
+Lihat [changelog proyek](docs/changelog.md) untuk ringkasan integrasi, konversi halaman, rute, dan aset.

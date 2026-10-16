@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
     <base href="{{ url('/') }}/" />
@@ -11,6 +11,7 @@
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/metronic-layout.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('assets/js/metronic-menu-translations.js') }}"></script>
     @yield('page_assets')
     {!! trim($__env->yieldContent('head_assets')) !!}
     @include('partials.trackers._ga-tag-manager-for-head')

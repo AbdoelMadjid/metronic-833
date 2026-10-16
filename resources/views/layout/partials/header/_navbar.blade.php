@@ -56,7 +56,10 @@
 @include('partials.theme-mode._main')
     </div>
     <!--end::Theme mode-->
-    
+
+    <!--layout-partial:partials/menus/_language-menu.html-->
+    @include('partials.menus._language-menu')
+
     <!--begin::User menu-->
     <div class="app-navbar-item ms-1 ms-md-4" id="kt_header_user_menu_toggle">
         <!--begin::Menu wrapper-->
@@ -82,4 +85,3 @@
         <!--end::Header menu toggle-->
 </div>
 <!--end::Navbar-->
-

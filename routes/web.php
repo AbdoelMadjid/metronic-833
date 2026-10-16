@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\LanguageController;
 use Illuminate\Support\Facades\Route;
 
+Route::post('/language', [LanguageController::class, 'update'])->name('language.switch');
 Route::view('/', 'index')->name('home');
 
 $metronicPages = [
@@ -241,10 +243,10 @@ $metronicPages = [
 ];
 
 foreach ($metronicPages as $page) {
-    $routeName = 'metronic.' . str_replace(['/', '-'], ['.', '_'], $page);
+    $routeName = 'metronic.'.str_replace(['/', '-'], ['.', '_'], $page);
     $view = $page === 'template/index'
         ? 'template.index'
-        : 'template.' . $page;
+        : 'template.'.$page;
 
     Route::view($page, $view)->name($routeName);
 }
