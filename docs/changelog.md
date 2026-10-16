@@ -2,6 +2,12 @@
 
 Catatan pengembangan proyek per rilis. Setiap versi mengacu pada tag Git dengan nama yang sama.
 
+## [v1.3.1] — Perbaikan katalog bahasa
+
+- Memperbaiki diagram Mermaid dan memperbarui dokumentasi alur multi-bahasa agar sesuai dengan katalog JSON.
+- Menjelaskan penggunaan katalog JSON yang sama untuk menu dan helper terjemahan Laravel.
+- Memperbaiki selector agar script terjemahan dapat menemukan menu sidebar.
+
 ## [v1.3.0] — Perapian layout dan navigasi
 
 - Merapikan format penulisan seluruh view Blade template.

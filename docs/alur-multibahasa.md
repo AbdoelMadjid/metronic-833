@@ -56,19 +56,24 @@ Jika JavaScript atau permintaan AJAX gagal, browser mengirim form normal ke rout
 
 ```mermaid
 flowchart LR
-    A[Request web] --> B[Session dibaca]
-    B --> C[SetLocale memvalidasi locale]
-    C --> D[app()->setLocale(locale)]
-    D --> E[Blade merender html lang]
-    E --> F[Script menu membaca locale]
-    F --> G[Sidebar dan topbar diterjemahkan]
+    A[Request halaman] --> B[Middleware SetLocale]
+    B --> C[Baca locale dari session]
+    C --> D{Locale terdaftar di config}
+    D -- Ya --> E[Gunakan locale session]
+    D -- Tidak --> F[Gunakan locale fallback]
+    E --> G[Laravel mengatur locale aplikasi]
+    F --> G
+    G --> H[Blade merender atribut html lang]
+    H --> I[MenuTranslationCatalog membaca lang locale json]
+    I --> J[Blade menyisipkan katalog ke head dengan @js]
+    J --> K[Script menerjemahkan sidebar dan topbar]
 ```
 
-`SetLocale` ditambahkan ke grup middleware `web` melalui `bootstrap/app.php`. Urutan ini memastikan Blade dapat membaca locale dari `app()->getLocale()` ketika merender dokumen.
+`SetLocale` ditambahkan ke grup middleware `web` melalui `bootstrap/app.php`. Middleware memvalidasi locale dari session menggunakan daftar di `config/locales.php`, lalu memanggil `app()->setLocale()`. Dengan begitu, Blade dan helper terjemahan Laravel memakai locale yang sama saat merender halaman.
 
 ## 5. Bagaimana Flash Bahasa Inggris Dikurangi
 
-Katalog locale aktif dibaca oleh `MenuTranslationCatalog` dari `lang/{locale}.json`, lalu disisipkan dengan aman ke bagian `<head>` melalui helper Blade `@js`. Karena itu `metronic-menu-translations.js` sudah memiliki kamus saat dimuat secara sinkron, sebelum markup sidebar dan navbar dibaca browser. Script memasang `MutationObserver` pada dokumen. Saat node teks navigasi ditambahkan, script menerjemahkannya menggunakan kamus locale aktif.
+Katalog locale aktif dibaca oleh `MenuTranslationCatalog` dari `lang/{locale}.json`, lalu disisipkan dengan aman ke bagian `<head>` melalui helper Blade `@js`. Karena itu `metronic-menu-translations.js` sudah memiliki kamus saat dimuat, sebelum markup sidebar dan navbar tersedia. Script menerjemahkan menu yang sudah ada dan memasang `MutationObserver` untuk menerjemahkan node navigasi yang ditambahkan kemudian.
 
 Untuk pergantian bahasa ketika halaman sudah terbuka, event submit ditangani dengan `fetch()`. Controller membaca file JSON locale baru dan mengirimkannya bersama kode locale. Respons JSON dipakai untuk menerapkan terjemahan langsung tanpa navigasi ulang. Script menyimpan teks asli node supaya perpindahan bolak-balik antarbahasa tidak menerjemahkan hasil terjemahan sebelumnya.
 
@@ -115,20 +120,15 @@ Sediakan file untuk setiap locale yang didaftarkan, seperti `lang/id.json`, `lan
 
 ## 7. Menggunakan Terjemahan Laravel untuk Konten Halaman
 
-Untuk konten aplikasi yang perlu diterjemahkan secara server-side, gunakan katalog Laravel di `lang/{locale}/...` dan helper `__()`/`@lang`, alih-alih menambahkan label isi halaman ke script menu.
-
-File JSON Laravel menggunakan teks sumber sebagai key, sehingga katalog ini juga dapat dipakai server-side dengan `__()` atau `@lang` untuk teks yang sama. Untuk key yang lebih terstruktur atau pesan yang tidak berupa frasa tampilan, katalog PHP seperti `lang/{locale}/navigation.php` juga bisa digunakan. Contoh pemakaian di Blade:
+File `lang/{locale}.json` yang sudah digunakan untuk menu juga dapat dipakai oleh translator bawaan Laravel untuk konten Blade dan controller. Gunakan teks sumber sebagai key yang sama persis dengan teks JSON, lalu panggil helper `__()` atau directive `@lang`:
 
 ```blade
-<h1>{{ __('navigation.settings') }}</h1>
+<h1>{{ __('Settings') }}</h1>
 ```
 
-```php
-<?php
+Jika katalog berisi `"Settings": "Pengaturan"` di `lang/id.json`, Laravel akan menampilkan `Pengaturan` saat locale aktif `id`. Ini membantu menggunakan satu katalog JSON untuk label menu dan teks halaman.
 
-// lang/id/navigation.php
-return ['settings' => 'Pengaturan'];
-```
+Untuk pesan terstruktur atau key yang tidak berupa teks tampilan, katalog PHP per kelompok seperti `lang/id/navigation.php` tetap dapat dipakai. Jangan menduplikasi key JSON ke file PHP tanpa kebutuhan khusus.
 
 Menu Metronic tetap memakai JavaScript untuk menerapkan kamus sebelum menu terlihat dan saat pergantian bahasa tanpa reload. Untuk konten Blade, pemanggilan `__()` akan menghasilkan terjemahan server-side dari locale session.
 

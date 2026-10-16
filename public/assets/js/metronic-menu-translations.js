@@ -5,7 +5,7 @@
     const isNavigationNode = (node) => {
         const element = node.nodeType === Node.TEXT_NODE ? node.parentElement : node;
 
-        return Boolean(element?.closest('[id="#kt_app_sidebar_menu"], #kt_app_header_menu'));
+        return Boolean(element?.closest('#kt_app_sidebar_menu, #kt_app_header_menu'));
     };
 
     const translateTextNode = (node) => {
