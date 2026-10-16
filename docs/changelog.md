@@ -2,6 +2,13 @@
 
 Catatan pengembangan proyek per rilis. Setiap versi mengacu pada tag Git dengan nama yang sama.
 
+## [v1.4.0] — Dokumentasi dan pelengkapan terjemahan
+
+- Menambahkan halaman dokumentasi lokal beserta navigasi dan rute berdasarkan konfigurasi, termasuk tautan dokumentasi yang dibuka di tab baru.
+- Mengarahkan tombol Preview dokumentasi ke halaman utama dashboard.
+- Melengkapi katalog terjemahan menu sidebar, navbar, dropdown pengguna, dan kartu dashboard dalam bahasa Jerman, Spanyol, Prancis, Indonesia, dan Jepang.
+- Menambahkan kunci menu dalam `en.json` sebagai acuan terjemahan bahasa lain serta menyelaraskan penerjemah menu dengan label yang digunakan.
+
 ## [v1.3.2] — Drawer navbar dan rekomendasi fondasi aplikasi
 
 - Menambahkan drawer Activities dan Chat bawaan Metronic ke layout bersama.

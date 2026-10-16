@@ -483,7 +483,7 @@
                         <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
                                 href="{{ route('metronic.pages.social.activity') }}"><span class="menu-bullet"><span
                                         class="bullet bullet-dot"></span></span><span
-                                    class="menu-title">Activty</span></a><!--end:Menu link--></div>
+                                    class="menu-title">Activity</span></a><!--end:Menu link--></div>
                         <!--end:Menu item--><!--begin:Menu item-->
                         <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
                                 href="{{ route('metronic.pages.social.followers') }}"><span class="menu-bullet"><span
@@ -1473,18 +1473,18 @@
                     </div><!--end:Menu content-->
                 </div><!--end:Menu item--><!--begin:Menu item-->
                 <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                        href="https://preview.keenthemes.com/html/metronic/docs/base/utilities"
+                        href="{{ route('documentation.base.utilities') }}"
                         target="_blank"><span class="menu-icon"><i
                                 class="ki-outline ki-rocket fs-2"></i></span><span
                             class="menu-title">Components</span></a><!--end:Menu link--></div>
                 <!--end:Menu item--><!--begin:Menu item-->
                 <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                        href="https://preview.keenthemes.com/html/metronic/docs" target="_blank"><span
+                        href="{{ route('docs.index') }}" target="_blank"><span
                             class="menu-icon"><i class="ki-outline ki-abstract-26 fs-2"></i></span><span
                             class="menu-title">Documentation</span></a><!--end:Menu link--></div>
                 <!--end:Menu item--><!--begin:Menu item-->
                 <div class="menu-item"><!--begin:Menu link--><a class="menu-link"
-                        href="https://preview.keenthemes.com/html/metronic/docs/getting-started/changelog"
+                        href="{{ route('documentation.getting-started.changelog') }}"
                         target="_blank"><span class="menu-icon"><i
                                 class="ki-outline ki-code fs-2"></i></span><span class="menu-title">Changelog
                             v8.3.3</span></a><!--end:Menu link--></div><!--end:Menu item-->

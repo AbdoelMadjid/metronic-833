@@ -52,7 +52,7 @@
                                 <i class="ki-outline ki-abstract-44 text-info fs-1"></i> </span>
                             <span class="d-flex flex-column">
                                 <span class="fs-6 fw-bold text-gray-800">Projects</span>
-                                <span class="fs-7 fw-semibold text-muted">Tasts, graphs & charts</span>
+                                <span class="fs-7 fw-semibold text-muted">Tasks, graphs & charts</span>
                             </span>
                         </a>
                         <!--end:Menu link-->
@@ -88,7 +88,7 @@
                                 <i class="ki-outline ki-chart-simple text-gray-900 fs-1"></i> </span>
                             <span class="d-flex flex-column">
                                 <span class="fs-6 fw-bold text-gray-800">Marketing</span>
-                                <span class="fs-7 fw-semibold text-muted">Campaings & conversions</span>
+                                <span class="fs-7 fw-semibold text-muted">Campaigns & conversions</span>
                             </span>
                         </a>
                         <!--end:Menu link-->
@@ -106,7 +106,7 @@
                                 <i class="ki-outline ki-switch text-warning fs-1"></i> </span>
                             <span class="d-flex flex-column">
                                 <span class="fs-6 fw-bold text-gray-800">Bidding</span>
-                                <span class="fs-7 fw-semibold text-muted">Campaings & conversions</span>
+                                <span class="fs-7 fw-semibold text-muted">Campaigns & conversions</span>
                             </span>
                         </a>
                         <!--end:Menu link-->
@@ -124,7 +124,7 @@
                                 <i class="ki-outline ki-abstract-42 text-danger fs-1"></i> </span>
                             <span class="d-flex flex-column">
                                 <span class="fs-6 fw-bold text-gray-800">POS System</span>
-                                <span class="fs-7 fw-semibold text-muted">Campaings & conversions</span>
+                                <span class="fs-7 fw-semibold text-muted">Campaigns & conversions</span>
                             </span>
                         </a>
                         <!--end:Menu link-->
@@ -142,7 +142,7 @@
                                 <i class="ki-outline ki-call text-primary fs-1"></i> </span>
                             <span class="d-flex flex-column">
                                 <span class="fs-6 fw-bold text-gray-800">Call Center</span>
-                                <span class="fs-7 fw-semibold text-muted">Campaings & conversions</span>
+                                <span class="fs-7 fw-semibold text-muted">Campaigns & conversions</span>
                             </span>
                         </a>
                         <!--end:Menu link-->
@@ -160,7 +160,7 @@
                         Landing Page Template
                     </div>
                     <div class="fs-7 fw-semibold text-muted">
-                        Onpe page landing template with pricing & others
+                        One page landing template with pricing & more
                     </div>
                 </div>
                 <a href="{{ route('metronic.landing') }}" class="btn btn-sm btn-primary fw-bold">

@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/language', [LanguageController::class, 'update'])->name('language.switch');
 Route::view('/', 'index')->name('home');
+Route::view('documentation', 'documentation.index')->name('documentation.index');
+Route::view('documentation/base/utilities', 'documentation.base.utilities')->name('documentation.base.utilities');
+Route::view('documentation/getting-started/changelog', 'documentation.getting-started.changelog')
+    ->name('documentation.getting-started.changelog');
 
 $metronicPages = [
     'account/activity',
@@ -249,6 +253,33 @@ foreach ($metronicPages as $page) {
         : 'template.'.$page;
 
     Route::view($page, $view)->name($routeName);
+}
+
+$documentationRoutes = [];
+$registerDocumentationRoute = function (array $menu) use (&$registerDocumentationRoute, &$documentationRoutes): void {
+    $routeName = $menu['route'] ?? null;
+
+    if (is_string($routeName) && str_starts_with($routeName, 'docs.')) {
+        $view = 'documentation.'.substr($routeName, 5);
+
+        if (! isset($documentationRoutes[$routeName]) && view()->exists($view)) {
+            $uri = 'docs/'.str_replace('.', '/', substr($routeName, 5));
+            Route::view($uri, $view)->name($routeName);
+            $documentationRoutes[$routeName] = true;
+        }
+    }
+
+    foreach ($menu as $child) {
+        if (is_array($child)) {
+            $registerDocumentationRoute($child);
+        }
+    }
+};
+
+foreach (config('docs', []) as $configuration) {
+    if (is_array($configuration)) {
+        $registerDocumentationRoute($configuration);
+    }
 }
 
 Route::view('layout-builder', 'index')->name('metronic.layout_builder');

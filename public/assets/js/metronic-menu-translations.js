@@ -1,11 +1,43 @@
     let translations = window.metronicMenuTranslations ?? {};
     const menuTextNodes = new Map();
+    const menuAttributeValues = new Map();
     let currentLocale = document.documentElement.lang;
 
     const isNavigationNode = (node) => {
         const element = node.nodeType === Node.TEXT_NODE ? node.parentElement : node;
 
-        return Boolean(element?.closest('#kt_app_sidebar_menu, #kt_app_header_menu'));
+        return Boolean(element?.closest('#kt_app_sidebar_menu, #kt_app_header_menu, #kt_header_user_menu_toggle .menu'));
+    };
+
+    const translateElementAttributes = (element) => {
+        if (element.nodeType !== Node.ELEMENT_NODE || !isNavigationNode(element)) {
+            return;
+        }
+
+        ['title'].forEach((attribute) => {
+            if (!element.hasAttribute(attribute)) {
+                return;
+            }
+
+            if (!menuAttributeValues.has(element)) {
+                menuAttributeValues.set(element, new Map());
+            }
+
+            const attributes = menuAttributeValues.get(element);
+
+            if (!attributes.has(attribute)) {
+                attributes.set(attribute, element.getAttribute(attribute));
+            }
+
+            const originalValue = attributes.get(attribute);
+            const label = originalValue.trim().replace(/\s+/g, ' ');
+            const translatedLabel = translations[label]
+                ?? label.split(/(\s+)/).map((word) => translations[word] ?? word).join('');
+
+            if (element.getAttribute(attribute) !== translatedLabel) {
+                element.setAttribute(attribute, translatedLabel);
+            }
+        });
     };
 
     const translateTextNode = (node) => {
@@ -38,12 +70,16 @@
             return;
         }
 
+        translateElementAttributes(node);
+
         const textWalker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
         let textNode;
 
         while ((textNode = textWalker.nextNode())) {
             translateTextNode(textNode);
         }
+
+        node.querySelectorAll?.('[title]').forEach(translateElementAttributes);
     };
 
     const translateObserver = new MutationObserver((mutations) => {
@@ -61,6 +97,10 @@
 
         menuTextNodes.forEach((_, node) => {
             translateTextNode(node);
+        });
+
+        menuAttributeValues.forEach((_, element) => {
+            translateElementAttributes(element);
         });
 
         const selectedOption = document.querySelector('[data-language-option="' + locale + '"]');

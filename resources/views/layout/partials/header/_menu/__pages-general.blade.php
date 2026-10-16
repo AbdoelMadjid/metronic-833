@@ -245,7 +245,7 @@
                     <div class="menu-item p-0 m-0">
                         <!--begin:Menu link-->
                         <a href="{{ route('metronic.pages.social.activity') }}" class="menu-link ">
-                            <span class="menu-title">Activty</span>
+                            <span class="menu-title">Activity</span>
                         </a>
                         <!--end:Menu link-->
                     </div>
