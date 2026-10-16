@@ -1,4 +1,3 @@
-
 <!--begin::Step 2-->
 <div data-kt-stepper-element="content">
     <div class="w-100">
@@ -7,10 +6,10 @@
             <!--begin::Label-->
             <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
                 <span class="required">Select Framework</span>
-                
 
-<span class="ms-1"  data-bs-toggle="tooltip" title="Specify your apps framework" >
-	<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
+
+                <span class="ms-1" data-bs-toggle="tooltip" title="Specify your apps framework">
+                    <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
 
             </label>
             <!--end::Label-->
@@ -21,7 +20,7 @@
                     <!--begin:Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-warning">
-                            <i class="ki-outline ki-html fs-2x text-warning"></i>     
+                            <i class="ki-outline ki-html fs-2x text-warning"></i>
                         </span>
                     </span>
                     <!--end:Icon-->
@@ -35,7 +34,7 @@
                 <!--end:Label-->
                 <!--begin:Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" checked name="framework" value="1"/>
+                    <input class="form-check-input" type="radio" checked name="framework" value="1" />
                 </span>
                 <!--end:Input-->
             </label>
@@ -47,7 +46,7 @@
                     <!--begin:Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-success">
-                            <i class="ki-outline ki-react fs-2x text-success"></i>  
+                            <i class="ki-outline ki-react fs-2x text-success"></i>
                         </span>
                     </span>
                     <!--end:Icon-->
@@ -61,7 +60,7 @@
                 <!--end:Label-->
                 <!--begin:Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="framework" value="2"/>
+                    <input class="form-check-input" type="radio" name="framework" value="2" />
                 </span>
                 <!--end:Input-->
             </label>
@@ -73,7 +72,7 @@
                     <!--begin:Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-danger">
-                            <i class="ki-outline ki-angular fs-2x text-danger"></i>                        </span>
+                            <i class="ki-outline ki-angular fs-2x text-danger"></i> </span>
                     </span>
                     <!--end:Icon-->
                     <!--begin:Info-->
@@ -86,7 +85,7 @@
                 <!--end:Label-->
                 <!--begin:Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="framework" value="3"/>
+                    <input class="form-check-input" type="radio" name="framework" value="3" />
                 </span>
                 <!--end:Input-->
             </label>
@@ -98,7 +97,7 @@
                     <!--begin:Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-primary">
-                            <i class="ki-outline ki-vue fs-2x text-primary"></i>                        </span>
+                            <i class="ki-outline ki-vue fs-2x text-primary"></i> </span>
                     </span>
                     <!--end:Icon-->
                     <!--begin:Info-->
@@ -111,7 +110,7 @@
                 <!--end:Label-->
                 <!--begin:Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="framework" value="4"/>
+                    <input class="form-check-input" type="radio" name="framework" value="4" />
                 </span>
                 <!--end:Input-->
             </label>
@@ -121,4 +120,3 @@
     </div>
 </div>
 <!--end::Step 2-->
-

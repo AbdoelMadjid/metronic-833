@@ -104,3 +104,9 @@ Nama route untuk halaman Metronic menggunakan awalan `metronic.`, contohnya `met
 ## Dokumentasi
 
 Lihat [changelog proyek](docs/changelog.md) untuk ringkasan integrasi, konversi halaman, rute, dan aset.
+
+Panduan implementasi dan struktur kode tersedia di:
+
+- [Arsitektur dan pola pengembangan template Metronic](docs/arsitektur-template-metronic.md)
+- [Alur multi-bahasa](docs/alur-multibahasa.md)
+- [Changelog per versi](docs/changelog.md)

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@inject('menuTranslationCatalog', 'App\\Support\\MenuTranslationCatalog')
 <html lang="{{ app()->getLocale() }}">
 
 <head>
@@ -11,13 +12,26 @@
     <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/metronic-layout.css') }}" rel="stylesheet" type="text/css" />
+    <script>
+        window.metronicMenuTranslations = @js($menuTranslationCatalog->forLocale(app()->getLocale()));
+    </script>
     <script src="{{ asset('assets/js/metronic-menu-translations.js') }}"></script>
     @yield('page_assets')
     {!! trim($__env->yieldContent('head_assets')) !!}
     @include('partials.trackers._ga-tag-manager-for-head')
 </head>
 
-<body {!! trim($__env->yieldContent('body_attributes', 'id="kt_app_body" class="app-default"')) !!}>
+@php
+    $bodyAttributes = trim($__env->yieldContent('body_attributes', 'id="kt_app_body" class="app-default"'));
+
+    if (str_contains($bodyAttributes, 'data-kt-app-toolbar-enabled="true"')) {
+        $bodyAttributes =
+            preg_replace('/\sdata-kt-app-toolbar-fixed(?:-mobile)?="[^"]*"/', '', $bodyAttributes) ?? $bodyAttributes;
+        $bodyAttributes .= ' data-kt-app-toolbar-fixed="true" data-kt-app-toolbar-fixed-mobile="true"';
+    }
+@endphp
+
+<body {!! $bodyAttributes !!}>
     @include('partials.theme-mode._init')
     @include('partials.trackers._ga-tag-manager-for-body')
 

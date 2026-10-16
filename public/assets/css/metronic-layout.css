@@ -3,6 +3,10 @@
     border-top: var(--bs-app-toolbar-base-border-top);
 }
 
+#kt_app_content {
+    background-color: var(--bs-app-bg-color, #fcfcfc);
+}
+
 @media (max-width: 991.98px) {
     body[data-kt-app-toolbar-fixed-mobile="true"] #kt_app_toolbar.metronic-toolbar-separated {
         border-top: var(--bs-app-toolbar-base-border-top);

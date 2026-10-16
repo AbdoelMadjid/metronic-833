@@ -1,10 +1,9 @@
-
 <!--begin::Chart widget 8-->
 <div class="card card-flush h-xl-100">
     <!--begin::Header-->
     <div class="card-header pt-5">
         <!--begin::Title-->
-        <h3 class="card-title align-items-start flex-column">            
+        <h3 class="card-title align-items-start flex-column">
             <span class="card-label fw-bold text-gray-900">Performance Overview</span>
             <span class="text-gray-500 mt-1 fw-semibold fs-6">Users from all channels</span>
         </h3>
@@ -13,11 +12,15 @@
         <div class="card-toolbar">
             <ul class="nav" id="kt_chart_widget_8_tabs">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1" data-bs-toggle="tab" id="kt_chart_widget_8_week_toggle" href="#kt_chart_widget_8_week_tab">Month</a>
+                    <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1"
+                        data-bs-toggle="tab" id="kt_chart_widget_8_week_toggle"
+                        href="#kt_chart_widget_8_week_tab">Month</a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1 active" data-bs-toggle="tab" id="kt_chart_widget_8_month_toggle" href="#kt_chart_widget_8_month_tab">Week</a>
+                    <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1 active"
+                        data-bs-toggle="tab" id="kt_chart_widget_8_month_toggle"
+                        href="#kt_chart_widget_8_month_tab">Week</a>
                 </li>
             </ul>
         </div>
@@ -29,18 +32,18 @@
         <!--begin::Tab content-->
         <div class="tab-content">
             <!--begin::Tab pane-->
-            <div class="tab-pane fade" id="kt_chart_widget_8_week_tab" role="tabpanel">                
+            <div class="tab-pane fade" id="kt_chart_widget_8_week_tab" role="tabpanel">
                 <!--begin::Statistics-->
-                <div class="mb-5">   
+                <div class="mb-5">
                     <!--begin::Statistics-->
-                    <div class="d-flex align-items-center mb-2">   
+                    <div class="d-flex align-items-center mb-2">
                         <span class="fs-1 fw-semibold text-gray-500 me-1 mt-n1">$</span>
                         <span class="fs-3x fw-bold text-gray-800 me-2 lh-1 ls-n2">18,89</span>
-                         
+
                         <span class="badge badge-light-success fs-base">
-                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>  
+                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
                             4,8%
-                        </span>                                    
+                        </span>
                     </div>
                     <!--end::Statistics-->
                     <!--begin::Description-->
@@ -49,9 +52,9 @@
                 </div>
                 <!--end::Statistics-->
                 <!--begin::Chart-->
-                <div id="kt_chart_widget_8_week_chart" class="ms-n5 min-h-auto" style="height: 275px"></div>     
-                <!--end::Chart--> 
-                
+                <div id="kt_chart_widget_8_week_chart" class="ms-n5 min-h-auto" style="height: 275px"></div>
+                <!--end::Chart-->
+
                 <!--begin::Items-->
                 <div class="d-flex flex-wrap pt-5">
                     <!--begin::Item-->
@@ -77,8 +80,8 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
-                    
+                    <!--ed::Item-->
+
                     <!--begin::Item-->
                     <div class="d-flex flex-column me-7 me-lg-16 pt-sm-3 pt-6">
                         <!--begin::Item-->
@@ -102,7 +105,7 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
+                    <!--ed::Item-->
                     <!--begin::Item-->
                     <div class="d-flex flex-column pt-sm-3 pt-6">
                         <!--begin::Item-->
@@ -126,25 +129,25 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
+                    <!--ed::Item-->
                 </div>
-                <!--ed::Items-->   
+                <!--ed::Items-->
             </div>
             <!--end::Tab pane-->
             <!--begin::Tab pane-->
             <div class="tab-pane fade active show" id="kt_chart_widget_8_month_tab" role="tabpanel">
                 <!--begin::Statistics-->
-                <div class="mb-5">   
+                <div class="mb-5">
                     <!--begin::Statistics-->
-                    <div class="d-flex align-items-center mb-2">   
+                    <div class="d-flex align-items-center mb-2">
                         <span class="fs-1 fw-semibold text-gray-500 me-1 mt-n1">$</span>
                         <span class="fs-3x fw-bold text-gray-800 me-2 lh-1 ls-n2">8,55</span>
-                         
-                        <span class="badge badge-light-success fs-base">                                
-                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i> 
+
+                        <span class="badge badge-light-success fs-base">
+                            <i class="ki-outline ki-arrow-up fs-5 text-success ms-n1"></i>
                             2.2%
-                        </span>  
-                                  
+                        </span>
+
                     </div>
                     <!--end::Statistics-->
                     <!--begin::Description-->
@@ -153,9 +156,9 @@
                 </div>
                 <!--end::Statistics-->
                 <!--begin::Chart-->
-                <div id="kt_chart_widget_8_month_chart" class="ms-n5 min-h-auto" style="height: 275px"></div>     
-                <!--end::Chart-->  
-                
+                <div id="kt_chart_widget_8_month_chart" class="ms-n5 min-h-auto" style="height: 275px"></div>
+                <!--end::Chart-->
+
                 <!--begin::Items-->
                 <div class="d-flex flex-wrap pt-5">
                     <!--begin::Item-->
@@ -181,8 +184,8 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
-                    
+                    <!--ed::Item-->
+
                     <!--begin::Item-->
                     <div class="d-flex flex-column me-7 me-lg-16 pt-sm-3 pt-6">
                         <!--begin::Item-->
@@ -206,7 +209,7 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
+                    <!--ed::Item-->
                     <!--begin::Item-->
                     <div class="d-flex flex-column pt-sm-3 pt-6">
                         <!--begin::Item-->
@@ -230,9 +233,9 @@
                         </div>
                         <!--ed::Item-->
                     </div>
-                    <!--ed::Item-->  
+                    <!--ed::Item-->
                 </div>
-                <!--ed::Items-->        
+                <!--ed::Items-->
             </div>
             <!--end::Tab pane-->
         </div>
@@ -241,5 +244,3 @@
     <!--end::Body-->
 </div>
 <!--end::Chart widget 8-->
-
-

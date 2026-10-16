@@ -1,4 +1,3 @@
-
 <!--begin::Step 1-->
 <div class="current" data-kt-stepper-element="content">
     <div class="w-100">
@@ -7,15 +6,16 @@
             <!--begin::Label-->
             <label class="d-flex align-items-center fs-5 fw-semibold mb-2">
                 <span class="required">App Name</span>
-                
 
-<span class="ms-1"  data-bs-toggle="tooltip" title="Specify your unique app name" >
-	<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
+
+                <span class="ms-1" data-bs-toggle="tooltip" title="Specify your unique app name">
+                    <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
 
             </label>
             <!--end::Label-->
             <!--begin::Input-->
-            <input type="text" class="form-control form-control-lg form-control-solid" name="name" placeholder="" value=""/>
+            <input type="text" class="form-control form-control-lg form-control-solid" name="name" placeholder=""
+                value="" />
             <!--end::Input-->
         </div>
         <!--end::Input group-->
@@ -24,10 +24,10 @@
             <!--begin::Label-->
             <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
                 <span class="required">Category</span>
-                
 
-<span class="ms-1"  data-bs-toggle="tooltip" title="Select your app category" >
-	<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
+
+                <span class="ms-1" data-bs-toggle="tooltip" title="Select your app category">
+                    <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
 
             </label>
             <!--end::Label-->
@@ -40,7 +40,7 @@
                         <!--begin:Icon-->
                         <span class="symbol symbol-50px me-6">
                             <span class="symbol-label bg-light-primary">
-                                <i class="ki-outline ki-compass fs-1 text-primary"></i>                            </span>
+                                <i class="ki-outline ki-compass fs-1 text-primary"></i> </span>
                         </span>
                         <!--end:Icon-->
                         <!--begin:Info-->
@@ -53,7 +53,7 @@
                     <!--end:Label-->
                     <!--begin:Input-->
                     <span class="form-check form-check-custom form-check-solid">
-                        <input class="form-check-input" type="radio"  name="category" value="1"/>
+                        <input class="form-check-input" type="radio" name="category" value="1" />
                     </span>
                     <!--end:Input-->
                 </label>
@@ -65,7 +65,7 @@
                         <!--begin:Icon-->
                         <span class="symbol symbol-50px me-6">
                             <span class="symbol-label bg-light-danger  ">
-                                <i class="ki-outline ki-element-11 fs-1 text-danger"></i>                            </span>
+                                <i class="ki-outline ki-element-11 fs-1 text-danger"></i> </span>
                         </span>
                         <!--end:Icon-->
                         <!--begin:Info-->
@@ -78,7 +78,7 @@
                     <!--end:Label-->
                     <!--begin:Input-->
                     <span class="form-check form-check-custom form-check-solid">
-                        <input class="form-check-input" type="radio" name="category" value="2"/>
+                        <input class="form-check-input" type="radio" name="category" value="2" />
                     </span>
                     <!--end:Input-->
                 </label>
@@ -90,7 +90,7 @@
                         <!--begin:Icon-->
                         <span class="symbol symbol-50px me-6">
                             <span class="symbol-label bg-light-success">
-                                <i class="ki-outline ki-timer fs-1 text-success"></i>                            </span>
+                                <i class="ki-outline ki-timer fs-1 text-success"></i> </span>
                         </span>
                         <!--end:Icon-->
                         <!--begin:Info-->
@@ -103,7 +103,7 @@
                     <!--end:Label-->
                     <!--begin:Input-->
                     <span class="form-check form-check-custom form-check-solid">
-                        <input class="form-check-input" type="radio" name="category" value="3"/>
+                        <input class="form-check-input" type="radio" name="category" value="3" />
                     </span>
                     <!--end:Input-->
                 </label>
@@ -115,4 +115,3 @@
     </div>
 </div>
 <!--end::Step 1-->
-

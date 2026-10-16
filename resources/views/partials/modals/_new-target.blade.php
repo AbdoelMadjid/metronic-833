@@ -1,4 +1,3 @@
-
 <!--begin::Modal - New Target-->
 <div class="modal fade" id="kt_modal_new_target" tabindex="-1" aria-hidden="true">
     <!--begin::Modal dialog-->
@@ -9,7 +8,8 @@
             <div class="modal-header pb-0 border-0 justify-content-end">
                 <!--begin::Close-->
                 <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                    <i class="ki-outline ki-cross fs-1"></i>                </div>
+                    <i class="ki-outline ki-cross fs-1"></i>
+                </div>
                 <!--end::Close-->
             </div>
             <!--begin::Modal header-->
@@ -24,7 +24,8 @@
                         <!--end::Title-->
                         <!--begin::Description-->
                         <div class="text-muted fw-semibold fs-5">
-                            If you need more info, please check <a href="#" class="fw-bold link-primary">Project Guidelines</a>.
+                            If you need more info, please check <a href="#" class="fw-bold link-primary">Project
+                                Guidelines</a>.
                         </div>
                         <!--end::Description-->
                     </div>
@@ -34,14 +35,16 @@
                         <!--begin::Label-->
                         <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
                             <span class="required">Target Title</span>
-                            
 
-<span class="ms-1"  data-bs-toggle="tooltip" title="Specify a target name for future usage and reference" >
-	<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
+
+                            <span class="ms-1" data-bs-toggle="tooltip"
+                                title="Specify a target name for future usage and reference">
+                                <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
 
                         </label>
                         <!--end::Label-->
-                        <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title"/>
+                        <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title"
+                            name="target_title" />
                     </div>
                     <!--end::Input group-->
                     <!--begin::Input group-->
@@ -49,7 +52,8 @@
                         <!--begin::Col-->
                         <div class="col-md-6 fv-row">
                             <label class="required fs-6 fw-semibold mb-2">Assign</label>
-                            <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Select a Team Member" name="target_assign">
+                            <select class="form-select form-select-solid" data-control="select2" data-hide-search="true"
+                                data-placeholder="Select a Team Member" name="target_assign">
                                 <option value="">Select user...</option>
                                 <option value="1">Karina Clark</option>
                                 <option value="2">Robert Doe</option>
@@ -65,9 +69,10 @@
                             <!--begin::Input-->
                             <div class="position-relative d-flex align-items-center">
                                 <!--begin::Icon-->
-                                <i class="ki-outline ki-calendar-8 fs-2 position-absolute mx-4"></i>                                <!--end::Icon-->
+                                <i class="ki-outline ki-calendar-8 fs-2 position-absolute mx-4"></i> <!--end::Icon-->
                                 <!--begin::Datepicker-->
-                                <input class="form-control form-control-solid ps-12" placeholder="Select a date" name="due_date"/>
+                                <input class="form-control form-control-solid ps-12" placeholder="Select a date"
+                                    name="due_date" />
                                 <!--end::Datepicker-->
                             </div>
                             <!--end::Input-->
@@ -78,7 +83,8 @@
                     <!--begin::Input group-->
                     <div class="d-flex flex-column mb-8">
                         <label class="fs-6 fw-semibold mb-2">Target Details</label>
-                        <textarea class="form-control form-control-solid" rows="3" name="target_details" placeholder="Type Target Details">
+                        <textarea class="form-control form-control-solid" rows="3" name="target_details"
+                            placeholder="Type Target Details">
                         </textarea>
                     </div>
                     <!--end::Input group-->
@@ -87,12 +93,12 @@
                         <!--begin::Label-->
                         <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
                             <span class="required">Tags</span>
-                            
-<!--layout-partial:partials/general/_form-tooltip-hint.html-->
-@include('partials.general._form-tooltip-hint')
+
+                            <!--layout-partial:partials/general/_form-tooltip-hint.html-->
+                            @include('partials.general._form-tooltip-hint')
                         </label>
                         <!--end::Label-->
-                        <input class="form-control form-control-solid" value="Important, Urgent" name="tags"/>
+                        <input class="form-control form-control-solid" value="Important, Urgent" name="tags" />
                     </div>
                     <!--end::Input group-->
                     <!--begin::Input group-->
@@ -100,7 +106,8 @@
                         <!--begin::Label-->
                         <div class="me-5">
                             <label class="fs-6 fw-semibold">Adding Users by Team Members</label>
-                            <div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning</div>
+                            <div class="fs-7 fw-semibold text-muted">If you need more info, please check budget planning
+                            </div>
                         </div>
                         <!--end::Label-->
                         <!--begin::Switch-->
@@ -127,7 +134,8 @@
                             <div class="d-flex align-items-center">
                                 <!--begin::Checkbox-->
                                 <label class="form-check form-check-custom form-check-solid me-10">
-                                    <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="email" checked="checked"/>
+                                    <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]"
+                                        value="email" checked="checked" />
                                     <span class="form-check-label fw-semibold">
                                         Email
                                     </span>
@@ -135,7 +143,8 @@
                                 <!--end::Checkbox-->
                                 <!--begin::Checkbox-->
                                 <label class="form-check form-check-custom form-check-solid">
-                                    <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]" value="phone"/>
+                                    <input class="form-check-input h-20px w-20px" type="checkbox" name="communication[]"
+                                        value="phone" />
                                     <span class="form-check-label fw-semibold">
                                         Phone
                                     </span>
@@ -172,4 +181,3 @@
     <!--end::Modal dialog-->
 </div>
 <!--end::Modal - New Target-->
-

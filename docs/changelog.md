@@ -2,6 +2,15 @@
 
 Catatan pengembangan proyek per rilis. Setiap versi mengacu pada tag Git dengan nama yang sama.
 
+## [v1.3.0] — Perapian layout dan navigasi
+
+- Merapikan format penulisan seluruh view Blade template.
+- Menyelaraskan toolbar dan area content, serta memperbaiki tag penutup yang membuat footer tersarang di beberapa halaman aplikasi.
+- Memperbaiki tag pemuatan JavaScript halaman dan menambahkan stylesheet Leaflet untuk peta Support Center Contact.
+- Menyelaraskan status aktif dan accordion bertingkat pada sidebar dan navbar, termasuk tab Pages.
+- Memperhalus scroll sidebar menuju menu aktif.
+- Menambahkan dokumentasi arsitektur template dan alur multi-bahasa serta katalog terjemahan JSON.
+
 ## [v1.2.0] — Pilihan bahasa
 
 - Menambahkan pilihan bahasa English, Indonesia, Spanish, German, Japanese, dan French.

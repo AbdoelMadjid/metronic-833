@@ -1,4 +1,3 @@
-
 <!--begin::Step 3-->
 <div data-kt-stepper-element="content">
     <div class="w-100">
@@ -10,7 +9,8 @@
             </label>
             <!--end::Label-->
             <!--begin::Input-->
-            <input type="text" class="form-control form-control-lg form-control-solid" name="dbname" placeholder="" value="master_db"/>
+            <input type="text" class="form-control form-control-lg form-control-solid" name="dbname" placeholder=""
+                value="master_db" />
             <!--end::Input-->
         </div>
         <!--end::Input group-->
@@ -19,10 +19,10 @@
             <!--begin::Label-->
             <label class="d-flex align-items-center fs-5 fw-semibold mb-4">
                 <span class="required">Select Database Engine</span>
-                
 
-<span class="ms-1"  data-bs-toggle="tooltip" title="Select your app database engine" >
-	<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
+
+                <span class="ms-1" data-bs-toggle="tooltip" title="Select your app database engine">
+                    <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>
 
             </label>
             <!--end::Label-->
@@ -33,7 +33,7 @@
                     <!--begin::Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-success">
-                            <i class="ki-outline ki-note text-success fs-2x"></i>                                         
+                            <i class="ki-outline ki-note text-success fs-2x"></i>
                         </span>
                     </span>
                     <!--end::Icon-->
@@ -47,7 +47,7 @@
                 <!--end::Label-->
                 <!--begin::Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="dbengine" checked value="1"/>
+                    <input class="form-check-input" type="radio" name="dbengine" checked value="1" />
                 </span>
                 <!--end::Input-->
             </label>
@@ -59,7 +59,7 @@
                     <!--begin::Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-danger">
-                            <i class="ki-outline ki-google text-danger fs-2x"></i> 
+                            <i class="ki-outline ki-google text-danger fs-2x"></i>
                         </span>
                     </span>
                     <!--end::Icon-->
@@ -73,7 +73,7 @@
                 <!--end::Label-->
                 <!--begin::Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="dbengine" value="2"/>
+                    <input class="form-check-input" type="radio" name="dbengine" value="2" />
                 </span>
                 <!--end::Input-->
             </label>
@@ -85,7 +85,7 @@
                     <!--begin::Icon-->
                     <span class="symbol symbol-50px me-6">
                         <span class="symbol-label bg-light-warning">
-                            <i class="ki-outline ki-microsoft text-warning fs-2x"></i> 
+                            <i class="ki-outline ki-microsoft text-warning fs-2x"></i>
                         </span>
                     </span>
                     <!--end::Icon-->
@@ -99,7 +99,7 @@
                 <!--end::Label-->
                 <!--begin::Input-->
                 <span class="form-check form-check-custom form-check-solid">
-                    <input class="form-check-input" type="radio" name="dbengine" value="3"/>
+                    <input class="form-check-input" type="radio" name="dbengine" value="3" />
                 </span>
                 <!--end::Input-->
             </label>
@@ -109,4 +109,3 @@
     </div>
 </div>
 <!--end::Step 3-->
-

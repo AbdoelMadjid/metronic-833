@@ -1,4 +1,3 @@
-
 <!--begin:Row-->
 <div class="row">
     <!--begin:Col-->
@@ -7,92 +6,92 @@
         <div class="row">
             <!--begin:Col-->
             <div class="col-lg-6">
-                                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.overview') }}" class="menu-link ">
-                            <span class="menu-title">Overview</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.settings') }}" class="menu-link ">
-                            <span class="menu-title">Settings</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.security') }}" class="menu-link ">
-                            <span class="menu-title">Security</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.activity') }}" class="menu-link ">
-                            <span class="menu-title">Activity</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.billing') }}" class="menu-link ">
-                            <span class="menu-title">Billing</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                                                                            </div>
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.overview') }}" class="menu-link ">
+                        <span class="menu-title">Overview</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.settings') }}" class="menu-link ">
+                        <span class="menu-title">Settings</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.security') }}" class="menu-link ">
+                        <span class="menu-title">Security</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.activity') }}" class="menu-link ">
+                        <span class="menu-title">Activity</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.billing') }}" class="menu-link ">
+                        <span class="menu-title">Billing</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+            </div>
             <!--end:Col-->
             <!--begin:Col-->
             <div class="col-lg-6">
-                                                                                                                                                                            <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.statements') }}" class="menu-link ">
-                            <span class="menu-title">Statements</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.referrals') }}" class="menu-link ">
-                            <span class="menu-title">Referrals</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.api_keys') }}" class="menu-link ">
-                            <span class="menu-title">API Keys</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                                                        <!--begin:Menu item-->
-                    <div class="menu-item p-0 m-0">
-                        <!--begin:Menu link-->
-                        <a href="{{ route('metronic.account.logs') }}" class="menu-link ">
-                            <span class="menu-title">Logs</span>
-                        </a>
-                        <!--end:Menu link-->
-                    </div>
-                    <!--end:Menu item-->
-                            </div>
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.statements') }}" class="menu-link ">
+                        <span class="menu-title">Statements</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.referrals') }}" class="menu-link ">
+                        <span class="menu-title">Referrals</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.api_keys') }}" class="menu-link ">
+                        <span class="menu-title">API Keys</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+                <!--begin:Menu item-->
+                <div class="menu-item p-0 m-0">
+                    <!--begin:Menu link-->
+                    <a href="{{ route('metronic.account.logs') }}" class="menu-link ">
+                        <span class="menu-title">Logs</span>
+                    </a>
+                    <!--end:Menu link-->
+                </div>
+                <!--end:Menu item-->
+            </div>
             <!--end:Col-->
         </div>
         <!--end:Row-->
@@ -100,9 +99,8 @@
     <!--end:Col-->
     <!--begin:Col-->
     <div class="col-lg-7">
-        <img src="{{ asset('assets/media/stock/900x600/46.jpg') }}" class="rounded mw-100" alt=""/>
+        <img src="{{ asset('assets/media/stock/900x600/46.jpg') }}" class="rounded mw-100" alt="" />
     </div>
     <!--end:Col-->
 </div>
 <!--end:Row-->
-

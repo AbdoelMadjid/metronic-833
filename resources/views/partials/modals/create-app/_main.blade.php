@@ -1,4 +1,3 @@
-
 <!--begin::Modal - Create App-->
 <div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
     <!--begin::Modal dialog-->
@@ -12,25 +11,28 @@
                 <!--end::Modal title-->
                 <!--begin::Close-->
                 <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                    <i class="ki-outline ki-cross fs-1"></i>                </div>
+                    <i class="ki-outline ki-cross fs-1"></i>
+                </div>
                 <!--end::Close-->
             </div>
             <!--end::Modal header-->
             <!--begin::Modal body-->
             <div class="modal-body py-lg-10 px-lg-10">
                 <!--begin::Stepper-->
-                <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
+                <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid"
+                    id="kt_modal_create_app_stepper">
                     <!--begin::Aside-->
                     <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
                         <!--begin::Nav-->
                         <div class="stepper-nav ps-lg-10">
                             <!--begin::Step 1-->
                             <div class="stepper-item current" data-kt-stepper-element="nav">
-                                <!--begin::Wrapper-->  
+                                <!--begin::Wrapper-->
                                 <div class="stepper-wrapper">
                                     <!--begin::Icon-->
                                     <div class="stepper-icon w-40px h-40px">
-                                        <i class="ki-outline ki-check stepper-check fs-2"></i>                                        <span class="stepper-number">1</span>
+                                        <i class="ki-outline ki-check stepper-check fs-2"></i> <span
+                                            class="stepper-number">1</span>
                                     </div>
                                     <!--end::Icon-->
                                     <!--begin::Label-->
@@ -44,20 +46,21 @@
                                     </div>
                                     <!--end::Label-->
                                 </div>
-                                <!--end::Wrapper--> 
-            
+                                <!--end::Wrapper-->
+
                                 <!--begin::Line-->
                                 <div class="stepper-line h-40px"></div>
-                                <!--end::Line-->                                 
+                                <!--end::Line-->
                             </div>
                             <!--end::Step 1-->
                             <!--begin::Step 2-->
                             <div class="stepper-item" data-kt-stepper-element="nav">
-                                <!--begin::Wrapper-->  
+                                <!--begin::Wrapper-->
                                 <div class="stepper-wrapper">
                                     <!--begin::Icon-->
                                     <div class="stepper-icon w-40px h-40px">
-                                        <i class="ki-outline ki-check stepper-check fs-2"></i>                                        <span class="stepper-number">2</span>
+                                        <i class="ki-outline ki-check stepper-check fs-2"></i> <span
+                                            class="stepper-number">2</span>
                                     </div>
                                     <!--begin::Icon-->
                                     <!--begin::Label-->
@@ -71,20 +74,21 @@
                                     </div>
                                     <!--begin::Label-->
                                 </div>
-                                <!--end::Wrapper--> 
-            
+                                <!--end::Wrapper-->
+
                                 <!--begin::Line-->
                                 <div class="stepper-line h-40px"></div>
-                                <!--end::Line-->                               
+                                <!--end::Line-->
                             </div>
                             <!--end::Step 2-->
                             <!--begin::Step 3-->
                             <div class="stepper-item" data-kt-stepper-element="nav">
-                                <!--begin::Wrapper-->  
+                                <!--begin::Wrapper-->
                                 <div class="stepper-wrapper">
                                     <!--begin::Icon-->
                                     <div class="stepper-icon w-40px h-40px">
-                                        <i class="ki-outline ki-check stepper-check fs-2"></i>                                        <span class="stepper-number">3</span>
+                                        <i class="ki-outline ki-check stepper-check fs-2"></i> <span
+                                            class="stepper-number">3</span>
                                     </div>
                                     <!--end::Icon-->
                                     <!--begin::Label-->
@@ -98,20 +102,21 @@
                                     </div>
                                     <!--end::Label-->
                                 </div>
-                                <!--end::Wrapper--> 
-            
+                                <!--end::Wrapper-->
+
                                 <!--begin::Line-->
                                 <div class="stepper-line h-40px"></div>
-                                <!--end::Line-->                            
+                                <!--end::Line-->
                             </div>
                             <!--end::Step 3-->
                             <!--begin::Step 4-->
                             <div class="stepper-item" data-kt-stepper-element="nav">
-                                <!--begin::Wrapper-->  
+                                <!--begin::Wrapper-->
                                 <div class="stepper-wrapper">
                                     <!--begin::Icon-->
                                     <div class="stepper-icon w-40px h-40px">
-                                        <i class="ki-outline ki-check stepper-check fs-2"></i>                                        <span class="stepper-number">4</span>
+                                        <i class="ki-outline ki-check stepper-check fs-2"></i> <span
+                                            class="stepper-number">4</span>
                                     </div>
                                     <!--end::Icon-->
                                     <!--begin::Label-->
@@ -125,20 +130,21 @@
                                     </div>
                                     <!--end::Label-->
                                 </div>
-                                <!--end::Wrapper--> 
-            
+                                <!--end::Wrapper-->
+
                                 <!--begin::Line-->
                                 <div class="stepper-line h-40px"></div>
-                                <!--end::Line-->                            
+                                <!--end::Line-->
                             </div>
                             <!--end::Step 4-->
                             <!--begin::Step 5-->
                             <div class="stepper-item mark-completed" data-kt-stepper-element="nav">
-                                <!--begin::Wrapper-->  
+                                <!--begin::Wrapper-->
                                 <div class="stepper-wrapper">
                                     <!--begin::Icon-->
                                     <div class="stepper-icon w-40px h-40px">
-                                        <i class="ki-outline ki-check stepper-check fs-2"></i>                                        <span class="stepper-number">5</span>
+                                        <i class="ki-outline ki-check stepper-check fs-2"></i> <span
+                                            class="stepper-number">5</span>
                                     </div>
                                     <!--end::Icon-->
                                     <!--begin::Label-->
@@ -152,7 +158,7 @@
                                     </div>
                                     <!--end::Label-->
                                 </div>
-                                <!--end::Wrapper-->                                     
+                                <!--end::Wrapper-->
                             </div>
                             <!--end::Step 5-->
                         </div>
@@ -163,39 +169,42 @@
                     <div class="flex-row-fluid py-lg-5 px-lg-15">
                         <!--begin::Form-->
                         <form class="form" novalidate="novalidate" id="kt_modal_create_app_form">
-                            
-<!--layout-partial:partials/modals/create-app/steps/_step-1.html-->
-@include('partials.modals.create-app.steps._step-1')
-<!--layout-partial:partials/modals/create-app/steps/_step-2.html-->
-@include('partials.modals.create-app.steps._step-2')
-<!--layout-partial:partials/modals/create-app/steps/_step-3.html-->
-@include('partials.modals.create-app.steps._step-3')
-<!--layout-partial:partials/modals/create-app/steps/_step-4.html-->
-@include('partials.modals.create-app.steps._step-4')
-<!--layout-partial:partials/modals/create-app/steps/_step-5.html-->
-@include('partials.modals.create-app.steps._step-5')
+
+                            <!--layout-partial:partials/modals/create-app/steps/_step-1.html-->
+                            @include('partials.modals.create-app.steps._step-1')
+                            <!--layout-partial:partials/modals/create-app/steps/_step-2.html-->
+                            @include('partials.modals.create-app.steps._step-2')
+                            <!--layout-partial:partials/modals/create-app/steps/_step-3.html-->
+                            @include('partials.modals.create-app.steps._step-3')
+                            <!--layout-partial:partials/modals/create-app/steps/_step-4.html-->
+                            @include('partials.modals.create-app.steps._step-4')
+                            <!--layout-partial:partials/modals/create-app/steps/_step-5.html-->
+                            @include('partials.modals.create-app.steps._step-5')
                             <!--begin::Actions-->
                             <div class="d-flex flex-stack pt-10">
                                 <!--begin::Wrapper-->
                                 <div class="me-2">
-                                    <button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
-                                        <i class="ki-outline ki-arrow-left fs-3 me-1"></i>                                        Back
+                                    <button type="button" class="btn btn-lg btn-light-primary me-3"
+                                        data-kt-stepper-action="previous">
+                                        <i class="ki-outline ki-arrow-left fs-3 me-1"></i> Back
                                     </button>
                                 </div>
                                 <!--end::Wrapper-->
                                 <!--begin::Wrapper-->
                                 <div>
-                                    <button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
+                                    <button type="button" class="btn btn-lg btn-primary"
+                                        data-kt-stepper-action="submit">
                                         <span class="indicator-label">
                                             Submit
-                                            <i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i>                                        </span>
+                                            <i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i> </span>
                                         <span class="indicator-progress">
-                                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                            Please wait... <span
+                                                class="spinner-border spinner-border-sm align-middle ms-2"></span>
                                         </span>
                                     </button>
                                     <button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">
                                         Continue
-                                        <i class="ki-outline ki-arrow-right fs-3 ms-1 me-0"></i>                                    </button>
+                                        <i class="ki-outline ki-arrow-right fs-3 ms-1 me-0"></i> </button>
                                 </div>
                                 <!--end::Wrapper-->
                             </div>
@@ -214,4 +223,3 @@
     <!--end::Modal dialog-->
 </div>
 <!--end::Modal - Create App-->
-

@@ -1,144 +1,156 @@
 @extends('layouts.metronic')
 
 @section('body_attributes')
-id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default"
+    id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true" data-kt-app-sidebar-enabled="true"
+    data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true"
+    data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true"
+    class="app-default"
 @endsection
 
 @section('page_title')
-Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes
+    Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes
 @endsection
 
 @section('toolbar')
-<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6 metronic-toolbar-separated">
-								<!--begin::Toolbar container-->
-								<div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
-									<!--begin::Page title-->
-									<div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
-										<!--begin::Title-->
-										<h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0"></h1>
-										<!--end::Title-->
-									</div>
-									<!--end::Page title-->
-									<!--begin::Actions-->
-									<div class="d-flex align-items-center gap-2 gap-lg-3">
-										<!--begin::Filter menu-->
-										<div class="m-0">
-											<!--begin::Menu toggle-->
-											<a href="#" class="btn btn-sm btn-flex btn-secondary fw-bold" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-											<i class="ki-duotone ki-filter fs-6 text-muted me-1">
-												<span class="path1"></span>
-												<span class="path2"></span>
-											</i>Filter</a>
-											<!--end::Menu toggle-->
-											<!--begin::Menu 1-->
-											<div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_69981c2842ed2">
-												<!--begin::Header-->
-												<div class="px-7 py-5">
-													<div class="fs-5 text-gray-900 fw-bold">Filter Options</div>
-												</div>
-												<!--end::Header-->
-												<!--begin::Menu separator-->
-												<div class="separator border-gray-200"></div>
-												<!--end::Menu separator-->
-												<!--begin::Form-->
-												<div class="px-7 py-5">
-													<!--begin::Input group-->
-													<div class="mb-10">
-														<!--begin::Label-->
-														<label class="form-label fw-semibold">Status:</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<div>
-															<select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_69981c2842ed2" data-allow-clear="true">
-																<option></option>
-																<option value="1">Approved</option>
-																<option value="2">Pending</option>
-																<option value="2">In Process</option>
-																<option value="2">Rejected</option>
-															</select>
-														</div>
-														<!--end::Input-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="mb-10">
-														<!--begin::Label-->
-														<label class="form-label fw-semibold">Member Type:</label>
-														<!--end::Label-->
-														<!--begin::Options-->
-														<div class="d-flex">
-															<!--begin::Options-->
-															<label class="form-check form-check-sm form-check-custom form-check-solid me-5">
-																<input class="form-check-input" type="checkbox" value="1" />
-																<span class="form-check-label">Author</span>
-															</label>
-															<!--end::Options-->
-															<!--begin::Options-->
-															<label class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="2" checked="checked" />
-																<span class="form-check-label">Customer</span>
-															</label>
-															<!--end::Options-->
-														</div>
-														<!--end::Options-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="mb-10">
-														<!--begin::Label-->
-														<label class="form-label fw-semibold">Notifications:</label>
-														<!--end::Label-->
-														<!--begin::Switch-->
-														<div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
-															<input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked" />
-															<label class="form-check-label">Enabled</label>
-														</div>
-														<!--end::Switch-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Actions-->
-													<div class="d-flex justify-content-end">
-														<button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
-														<button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
-													</div>
-													<!--end::Actions-->
-												</div>
-												<!--end::Form-->
-											</div>
-											<!--end::Menu 1-->
-										</div>
-										<!--end::Filter menu-->
-										<!--begin::Secondary button-->
-										<!--end::Secondary button-->
-										<!--begin::Primary button-->
-										<a href="#" class="btn btn-sm fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">Create</a>
-										<!--end::Primary button-->
-									</div>
-									<!--end::Actions-->
-								</div>
-								<!--end::Toolbar container-->
-							</div>
+    <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6 metronic-toolbar-separated">
+        <!--begin::Toolbar container-->
+        <div id="kt_app_toolbar_container" class="app-container container-fluid d-flex flex-stack">
+            <!--begin::Page title-->
+            <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+                <!--begin::Title-->
+                <h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 flex-column justify-content-center my-0"></h1>
+                <!--end::Title-->
+            </div>
+            <!--end::Page title-->
+            <!--begin::Actions-->
+            <div class="d-flex align-items-center gap-2 gap-lg-3">
+                <!--begin::Filter menu-->
+                <div class="m-0">
+                    <!--begin::Menu toggle-->
+                    <a href="#" class="btn btn-sm btn-flex btn-secondary fw-bold" data-kt-menu-trigger="click"
+                        data-kt-menu-placement="bottom-end">
+                        <i class="ki-duotone ki-filter fs-6 text-muted me-1">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>Filter</a>
+                    <!--end::Menu toggle-->
+                    <!--begin::Menu 1-->
+                    <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true"
+                        id="kt_menu_69981c2842ed2">
+                        <!--begin::Header-->
+                        <div class="px-7 py-5">
+                            <div class="fs-5 text-gray-900 fw-bold">Filter Options</div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Menu separator-->
+                        <div class="separator border-gray-200"></div>
+                        <!--end::Menu separator-->
+                        <!--begin::Form-->
+                        <div class="px-7 py-5">
+                            <!--begin::Input group-->
+                            <div class="mb-10">
+                                <!--begin::Label-->
+                                <label class="form-label fw-semibold">Status:</label>
+                                <!--end::Label-->
+                                <!--begin::Input-->
+                                <div>
+                                    <select class="form-select form-select-solid" multiple="multiple" data-kt-select2="true"
+                                        data-close-on-select="false" data-placeholder="Select option"
+                                        data-dropdown-parent="#kt_menu_69981c2842ed2" data-allow-clear="true">
+                                        <option></option>
+                                        <option value="1">Approved</option>
+                                        <option value="2">Pending</option>
+                                        <option value="2">In Process</option>
+                                        <option value="2">Rejected</option>
+                                    </select>
+                                </div>
+                                <!--end::Input-->
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Input group-->
+                            <div class="mb-10">
+                                <!--begin::Label-->
+                                <label class="form-label fw-semibold">Member Type:</label>
+                                <!--end::Label-->
+                                <!--begin::Options-->
+                                <div class="d-flex">
+                                    <!--begin::Options-->
+                                    <label class="form-check form-check-sm form-check-custom form-check-solid me-5">
+                                        <input class="form-check-input" type="checkbox" value="1" />
+                                        <span class="form-check-label">Author</span>
+                                    </label>
+                                    <!--end::Options-->
+                                    <!--begin::Options-->
+                                    <label class="form-check form-check-sm form-check-custom form-check-solid">
+                                        <input class="form-check-input" type="checkbox" value="2" checked="checked" />
+                                        <span class="form-check-label">Customer</span>
+                                    </label>
+                                    <!--end::Options-->
+                                </div>
+                                <!--end::Options-->
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Input group-->
+                            <div class="mb-10">
+                                <!--begin::Label-->
+                                <label class="form-label fw-semibold">Notifications:</label>
+                                <!--end::Label-->
+                                <!--begin::Switch-->
+                                <div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
+                                    <input class="form-check-input" type="checkbox" value="" name="notifications"
+                                        checked="checked" />
+                                    <label class="form-check-label">Enabled</label>
+                                </div>
+                                <!--end::Switch-->
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Actions-->
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2"
+                                    data-kt-menu-dismiss="true">Reset</button>
+                                <button type="submit" class="btn btn-sm btn-primary"
+                                    data-kt-menu-dismiss="true">Apply</button>
+                            </div>
+                            <!--end::Actions-->
+                        </div>
+                        <!--end::Form-->
+                    </div>
+                    <!--end::Menu 1-->
+                </div>
+                <!--end::Filter menu-->
+                <!--begin::Secondary button-->
+                <!--end::Secondary button-->
+                <!--begin::Primary button-->
+                <a href="#" class="btn btn-sm fw-bold btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#kt_modal_create_app">Create</a>
+                <!--end::Primary button-->
+            </div>
+            <!--end::Actions-->
+        </div>
+        <!--end::Toolbar container-->
+    </div>
 @endsection
 
 @section('content')
-<div id="kt_app_content" class="app-content flex-column-fluid">
-								<!--begin::Content container-->
-								<div id="kt_app_content_container" class="app-container container-xxl">
-									<!--begin::Card-->
-									<div class="card">
-										<!--begin::Card header-->
-										<div class="card-header">
-											<h3 class="card-title">CKEditor Classic</h3>
-											<div class="card-toolbar">
-												<span class="badge badge-light-primary">With Alignment, Font &amp; Remove Format</span>
-											</div>
-										</div>
-										<!--end::Card header-->
-										<!--begin::Card body-->
-										<div class="card-body">
-											<p class="text-muted mb-5">Classic editor with a traditional toolbar interface. All free plugins including text alignment, font controls, and remove format are enabled.</p>
-											<!--begin::Editor-->
-											<textarea id="kt_ckeditor_classic" name="kt_ckeditor_classic" class="form-control" rows="10">
+    <div id="kt_app_content" class="app-content flex-column-fluid">
+        <!--begin::Content container-->
+        <div id="kt_app_content_container" class="app-container container-fluid">
+            <!--begin::Card-->
+            <div class="card">
+                <!--begin::Card header-->
+                <div class="card-header">
+                    <h3 class="card-title">CKEditor Classic</h3>
+                    <div class="card-toolbar">
+                        <span class="badge badge-light-primary">With Alignment, Font &amp; Remove Format</span>
+                    </div>
+                </div>
+                <!--end::Card header-->
+                <!--begin::Card body-->
+                <div class="card-body">
+                    <p class="text-muted mb-5">Classic editor with a traditional toolbar interface. All free plugins
+                        including text alignment, font controls, and remove format are enabled.</p>
+                    <!--begin::Editor-->
+                    <textarea id="kt_ckeditor_classic" name="kt_ckeditor_classic" class="form-control" rows="10">
 												<h2>The three greatest things you learn from traveling</h2>
 												<p>Like all the great things on earth traveling teaches us by example. Here are some of the most precious lessons I've learned over the years of traveling.</p>
 												<h3>Appreciation of diversity</h3>
@@ -153,7 +165,71 @@ Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by Kee
 														<!--end::Card body-->
 														<!--end::Card-->
 														<!--begin::Scripts-->
-														<script>(function() { "use strict"; var retryCount = 0, maxRetries = 80, editorInitialized = false, maxStartRetries = 120, startRetryCount = 0; function initCKEditor() { if (editorInitialized) return; var Editor = (typeof CKEDITOR !== 'undefined' && CKEDITOR.ClassicEditor) ? CKEDITOR.ClassicEditor : (typeof ClassicEditor !== 'undefined' ? ClassicEditor : null); if (Editor) { editorInitialized = true; var config = { toolbar: { items: ['heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList', '|', 'alignment', '|', 'fontSize', 'fontFamily', '|', 'removeFormat', '|', 'blockQuote', 'insertTable', '|', 'undo', 'redo'], shouldNotGroupWhenFull: true }, language: 'en', alignment: { options: ['left', 'center', 'right', 'justify'] }, fontFamily: { options: ['default', 'Arial, Helvetica, sans-serif', 'Courier New, Courier, monospace', 'Georgia, serif', 'Lucida Sans Unicode, Lucida Grande, sans-serif', 'Tahoma, Geneva, sans-serif', 'Times New Roman, Times, serif', 'Trebuchet MS, Helvetica, sans-serif', 'Verdana, Geneva, sans-serif'], supportAllValues: true }, fontSize: { options: [9, 11, 13, 'default', 17, 19, 21], supportAllValues: true } }; var el = document.querySelector('#kt_ckeditor_classic'); if (!el) return; Editor.create(el, config) .then(function(editor) { console.log('CKEditor Classic initialized', editor); }) .catch(function(err) { console.error('CKEditor Classic:', err); editorInitialized = false; }); } else { retryCount++; if (retryCount &lt; maxRetries) setTimeout(initCKEditor, 100); } } function startInit() { if ((typeof CKEDITOR !== 'undefined' && CKEDITOR.ClassicEditor) || typeof ClassicEditor !== 'undefined') initCKEditor(); else { startRetryCount++; if (startRetryCount &lt; maxStartRetries) setTimeout(startInit, 50); } } window.addEventListener('load', startInit); })();</script>
+														<script>
+                  (function() {
+                      "use strict";
+                      var retryCount = 0,
+                          maxRetries = 80,
+                          editorInitialized = false,
+                          maxStartRetries = 120,
+                          startRetryCount = 0;
+
+                      function initCKEditor() {
+                          if (editorInitialized) return;
+                          var Editor = (typeof CKEDITOR !== 'undefined' && CKEDITOR.ClassicEditor) ? CKEDITOR.ClassicEditor : (
+                              typeof ClassicEditor !== 'undefined' ? ClassicEditor : null);
+                          if (Editor) {
+                              editorInitialized = true;
+                              var config = {
+                                  toolbar: {
+                                      items: ['heading', '|', 'bold', 'italic', 'link', '|', 'bulletedList', 'numberedList',
+                                          '|', 'alignment', '|', 'fontSize', 'fontFamily', '|', 'removeFormat', '|',
+                                          'blockQuote', 'insertTable', '|', 'undo', 'redo'
+                                      ],
+                                      shouldNotGroupWhenFull: true
+                                  },
+                                  language: 'en',
+                                  alignment: {
+                                      options: ['left', 'center', 'right', 'justify']
+                                  },
+                                  fontFamily: {
+                                      options: ['default', 'Arial, Helvetica, sans-serif', 'Courier New, Courier, monospace',
+                                          'Georgia, serif', 'Lucida Sans Unicode, Lucida Grande, sans-serif',
+                                          'Tahoma, Geneva, sans-serif', 'Times New Roman, Times, serif',
+                                          'Trebuchet MS, Helvetica, sans-serif', 'Verdana, Geneva, sans-serif'
+                                      ],
+                                      supportAllValues: true
+                                  },
+                                  fontSize: {
+                                      options: [9, 11, 13, 'default', 17, 19, 21],
+                                      supportAllValues: true
+                                  }
+                              };
+                              var el = document.querySelector('#kt_ckeditor_classic');
+                              if (!el) return;
+                              Editor.create(el, config).then(function(editor) {
+                                  console.log('CKEditor Classic initialized', editor);
+                              }).catch(function(err) {
+                                  console.error('CKEditor Classic:', err);
+                                  editorInitialized = false;
+                              });
+                          } else {
+                              retryCount++;
+                              if (retryCount & lt; maxRetries) setTimeout(initCKEditor, 100);
+                          }
+                      }
+
+                      function startInit() {
+                          if ((typeof CKEDITOR !== 'undefined' && CKEDITOR.ClassicEditor) || typeof ClassicEditor !== 'undefined')
+                              initCKEditor();
+                          else {
+                              startRetryCount++;
+                              if (startRetryCount & lt; maxStartRetries) setTimeout(startInit, 50);
+                          }
+                      }
+                      window.addEventListener('load', startInit);
+                  })();
+              </script>
 														<!--end::Scripts-->
 														<!--end::Content container-->
 														<!--end::Content-->
@@ -1442,7 +1518,9 @@ Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by Kee
 														<!--end::Modal - Create App-->
 														<!--end::Modals-->
 														<!--begin::Javascript-->
-														<script>var hostUrl = "/assets/";</script>
+														<script>
+                  var hostUrl = "/assets/";
+              </script>
 														<!--begin::Global Javascript Bundle(mandatory for all pages)-->
 														<script src="assets/plugins/global/plugins.bundle.js"></script>
 														<script src="assets/js/scripts.bundle.js"></script>
@@ -1459,8 +1537,8 @@ Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by Kee
 													</img>
 												</figure>
 											</textarea>
-										</div>
-									</div>
-								</div>
-							</div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
