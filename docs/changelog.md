@@ -2,6 +2,13 @@
 
 Catatan pengembangan proyek per rilis. Setiap versi mengacu pada tag Git dengan nama yang sama.
 
+## [v1.3.2] — Drawer navbar dan rekomendasi fondasi aplikasi
+
+- Menambahkan drawer Activities dan Chat bawaan Metronic ke layout bersama.
+- Memperbaiki referensi named route pada drawer Activities dan Shopping Cart agar sesuai dengan route Laravel yang terdaftar.
+- Melengkapi partial notice yang dipakai Activities serta opsi percakapan pada drawer Chat.
+- Menambahkan dokumen rekomendasi fondasi untuk pengembangan aplikasi yang lebih kompleks sebagai bahan diskusi.
+
 ## [v1.3.1] — Perbaikan katalog bahasa
 
 - Memperbaiki diagram Mermaid dan memperbarui dokumentasi alur multi-bahasa agar sesuai dengan katalog JSON.

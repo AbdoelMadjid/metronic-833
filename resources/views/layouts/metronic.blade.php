@@ -41,6 +41,8 @@
         @include('layout._default')
     @endif
 
+    @include('partials.drawers._activity-drawer')
+    @include('partials.drawers._chat-messenger')
     @include('partials.engage-new._main')
     {!! trim($__env->yieldContent('body_extras')) !!}
 
@@ -49,6 +51,7 @@
     </script>
     <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/custom/apps/chat/chat.js') }}"></script>
     {!! trim($__env->yieldContent('page_scripts')) !!}
     <script src="{{ asset('assets/js/metronic-menu-active.js') }}"></script>
 </body>

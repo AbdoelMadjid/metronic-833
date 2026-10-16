@@ -27,6 +27,8 @@ var KTAppChat = (function () {
         init: function (t) {
             !(function (t) {
                 t &&
+                    !t.dataset.ktChatInitialized &&
+                    ((t.dataset.ktChatInitialized = "true"),
                     (KTUtil.on(
                         t,
                         '[data-kt-element="input"]',
@@ -43,7 +45,7 @@ var KTAppChat = (function () {
                         function (n) {
                             e(t);
                         },
-                    ));
+                    )));
             })(t);
         },
     };
