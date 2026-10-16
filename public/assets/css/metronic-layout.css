@@ -1,0 +1,23 @@
+/* Keep the toolbar divider visible while page-specific layouts control its positioning. */
+#kt_app_toolbar.metronic-toolbar-separated {
+    border-top: var(--bs-app-toolbar-base-border-top);
+}
+
+@media (max-width: 991.98px) {
+    body[data-kt-app-toolbar-fixed-mobile="true"] #kt_app_toolbar.metronic-toolbar-separated {
+        border-top: var(--bs-app-toolbar-base-border-top);
+    }
+}
+
+/* Keep the fixed aside below the header and toolbar. */
+@media (min-width: 992px) {
+    body[data-kt-app-aside-enabled="true"] #kt_app_aside {
+        top: calc(var(--bs-app-header-height, 0px) + var(--bs-app-toolbar-height, 0px));
+        margin-top: 0;
+    }
+
+    /* The demo buttons stay in their standard position, above the aside layer. */
+    body[data-kt-app-aside-enabled="true"] #kt_app_engage {
+        z-index: 101;
+    }
+}

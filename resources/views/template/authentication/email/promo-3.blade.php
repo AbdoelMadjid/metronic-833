@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.3.3
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en">
-	<!--begin::Head-->
-	<head>
-<base href="../../" />
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-		<meta charset="utf-8" />
+@extends('layouts.metronic-document')
+
+@section('body_attributes')
+id="kt_body" class="app-blank"
+@endsection
+
+@section('head_assets')
+<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
+
 		<meta name="description" content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes" />
@@ -34,11 +25,10 @@ License: For each use you must have a valid license purchased only from above li
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_body" class="app-blank">
-		<!--begin::Theme mode setup on page load-->
+@endsection
+
+@section('body_content')
+<!--begin::Theme mode setup on page load-->
 		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
 		<!--end::Theme mode setup on page load-->
 		<!--begin::Root-->
@@ -220,8 +210,8 @@ License: For each use you must have a valid license purchased only from above li
 												<!--begin:Text-->
 												<div style="font-size:14px; text-align:left; font-weight:500; margin:0 60px 33px 60px; font-family:Arial,Helvetica,sans-serif">
 													<p style="color:#181C32; font-size: 18px; font-weight:600; margin-bottom:27px">Hey Esther,</p>
-													<p style="color:#3F4254; line-height:1.6">Lots of people make mistakes while 
-													<a href="#" style="font-family:Arial,Helvetica,sans-serif margin-right:3px">creating paragraphs.</a>Some writers just put whitespace in their text in random places for aesthetic purposes but don’t think about the coherence and structure of the text. In many cases, the 
+													<p style="color:#3F4254; line-height:1.6">Lots of people make mistakes while
+													<a href="#" style="font-family:Arial,Helvetica,sans-serif margin-right:3px">creating paragraphs.</a>Some writers just put whitespace in their text in random places for aesthetic purposes but don’t think about the coherence and structure of the text. In many cases, the
 													<a href="#" style="font-family:Arial,Helvetica,sans-serif; margin-right:3px">coherence within paragraphs</a>and between paragraphs remains unclear. These kinds of mistakes can mess up the structure of your articles.</p>
 												</div>
 												<!--end:Text-->
@@ -236,7 +226,7 @@ License: For each use you must have a valid license purchased only from above li
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">It’s all about customers!</p>
 											<p style="margin-bottom:2px">Call our customer care number: +31 6 3344 55 56</p>
-											<p style="margin-bottom:4px">You may reach us at 
+											<p style="margin-bottom:4px">You may reach us at
 											<a href="https://devs.keenthemes.com" rel="noopener" target="_blank" style="font-weight: 600">devs.keenthemes.com</a>.</p>
 											<p>We serve Mon-Fri, 9AM-18AM</p>
 										</td>
@@ -259,7 +249,7 @@ License: For each use you must have a valid license purchased only from above li
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; padding:0 15px; text-align:center; font-weight: 500; color: #A1A5B7;font-family:Arial,Helvetica,sans-serif">
-											<p>&copy; Copyright KeenThemes. 
+											<p>&copy; Copyright KeenThemes.
 											<a href="https://keenthemes.com" rel="noopener" target="_blank" style="font-weight: 600;font-family:Arial,Helvetica,sans-serif">Unsubscribe</a>&nbsp; from newsletter.</p>
 										</td>
 									</tr>
@@ -281,6 +271,4 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
-</html>
+@endsection

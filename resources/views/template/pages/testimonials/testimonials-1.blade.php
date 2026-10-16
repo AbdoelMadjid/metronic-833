@@ -1,52 +1,15 @@
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.3.3
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en">
-	<!--begin::Head-->
-	<head>
-<base href="../../" />
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
-		<meta name="keywords" content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes" />
-		<meta property="og:url" content="https://keenthemes.com/metronic" />
-		<meta property="og:site_name" content="Metronic by Keenthemes" />
-		<link rel="canonical" href="{{ route('metronic.pages.testimonials.testimonials_1') }}" />
-		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-		<!--begin::Fonts(mandatory for all pages)-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
-		<!--end::Fonts-->
-		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Stylesheets Bundle-->
-		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_app_body" data-kt-app-layout="dark-header" data-kt-app-header-fixed="true" data-kt-app-toolbar-enabled="true" class="app-default">
-		<!--begin::Theme mode setup on page load-->
-		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
-		<!--end::Theme mode setup on page load-->
-		<!--begin::App-->
-		<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-			<!--begin::Page-->
-			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
-				<!--begin::Header-->
-				<div id="kt_app_header" class="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize" data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
+@extends('layouts.metronic')
+
+@section('body_attributes')
+id="kt_app_body" data-kt-app-layout="dark-header" data-kt-app-header-fixed="true" data-kt-app-toolbar-enabled="true" class="app-default"
+@endsection
+
+@section('page_title')
+Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes
+@endsection
+
+@section('header')
+<div id="kt_app_header" class="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: true, lg: true}" data-kt-sticky-name="app-header-minimize" data-kt-sticky-offset="{default: '200px', lg: '0'}" data-kt-sticky-animation="false">
 					<!--begin::Header container-->
 					<div class="app-container container-xxl d-flex align-items-stretch justify-content-between" id="kt_app_header_container">
 						<!--begin::Logo-->
@@ -3815,7 +3778,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Heading-->
 										<div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('/assets/media/misc/menu-header-bg.jpg')">
 											<!--begin::Title-->
-											<h3 class="text-white fw-semibold px-9 mt-10 mb-6">Notifications 
+											<h3 class="text-white fw-semibold px-9 mt-10 mb-6">Notifications
 											<span class="fs-8 opacity-75 ps-3">24 reports</span></h3>
 											<!--end::Title-->
 											<!--begin::Tabs-->
@@ -4051,7 +4014,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Items-->
 												<!--begin::View more-->
 												<div class="py-3 text-center border-top">
-													<a href="{{ route('metronic.pages.user_profile.activity') }}" class="btn btn-color-gray-600 btn-active-color-primary">View All 
+													<a href="{{ route('metronic.pages.user_profile.activity') }}" class="btn btn-color-gray-600 btn-active-color-primary">View All
 													<i class="ki-duotone ki-arrow-right fs-5">
 														<span class="path1"></span>
 														<span class="path2"></span>
@@ -4300,7 +4263,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Items-->
 												<!--begin::View more-->
 												<div class="py-3 text-center border-top">
-													<a href="{{ route('metronic.pages.user_profile.activity') }}" class="btn btn-color-gray-600 btn-active-color-primary">View All 
+													<a href="{{ route('metronic.pages.user_profile.activity') }}" class="btn btn-color-gray-600 btn-active-color-primary">View All
 													<i class="ki-duotone ki-arrow-right fs-5">
 														<span class="path1"></span>
 														<span class="path2"></span>
@@ -4376,7 +4339,7 @@ License: For each use you must have a valid license purchased only from above li
 														<!--end::Menu item-->
 														<!--begin::Menu item-->
 														<div class="menu-item px-3">
-															<a href="#" class="menu-link flex-stack px-3">Create Payment 
+															<a href="#" class="menu-link flex-stack px-3">Create Payment
 															<span class="ms-2" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference">
 																<i class="ki-duotone ki-information fs-6">
 																	<span class="path1"></span>
@@ -4691,7 +4654,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Avatar-->
 												<!--begin::Username-->
 												<div class="d-flex flex-column">
-													<div class="fw-bold d-flex align-items-center fs-5">Robert Fox 
+													<div class="fw-bold d-flex align-items-center fs-5">Robert Fox
 													<span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span></div>
 													<a href="#" class="fw-semibold text-muted text-hover-primary fs-7">robert@kt.com</a>
 												</div>
@@ -4742,7 +4705,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Menu item-->
 												<!--begin::Menu item-->
 												<div class="menu-item px-3">
-													<a href="{{ route('metronic.account.statements') }}" class="menu-link d-flex flex-stack px-5">Statements 
+													<a href="{{ route('metronic.account.statements') }}" class="menu-link d-flex flex-stack px-5">Statements
 													<span class="ms-2 lh-0" data-bs-toggle="tooltip" title="View your statements">
 														<i class="ki-duotone ki-information-5 fs-5">
 															<span class="path1"></span>
@@ -4780,7 +4743,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Menu item-->
 										<div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
 											<a href="#" class="menu-link px-5">
-												<span class="menu-title position-relative">Mode 
+												<span class="menu-title position-relative">Mode
 												<span class="ms-5 position-absolute translate-middle-y top-50 end-0">
 													<i class="ki-duotone ki-night-day theme-light-show fs-2">
 														<span class="path1"></span>
@@ -4858,8 +4821,8 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Menu item-->
 										<div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
 											<a href="#" class="menu-link px-5">
-												<span class="menu-title position-relative">Language 
-												<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English 
+												<span class="menu-title position-relative">Language
+												<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
 												<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
 											</a>
 											<!--begin::Menu sub-->
@@ -4942,15 +4905,10 @@ License: For each use you must have a valid license purchased only from above li
 					</div>
 					<!--end::Header container-->
 				</div>
-				<!--end::Header-->
-				<!--begin::Wrapper-->
-				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
-					<!--begin::Main-->
-					<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-						<!--begin::Content wrapper-->
-						<div class="d-flex flex-column flex-column-fluid">
-							<!--begin::Toolbar-->
-							<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+@endsection
+
+@section('toolbar')
+<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6 metronic-toolbar-separated">
 								<!--begin::Toolbar container-->
 								<div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
 									<!--begin::Page title-->
@@ -4998,9 +4956,10 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Toolbar container-->
 							</div>
-							<!--end::Toolbar-->
-							<!--begin::Content-->
-							<div id="kt_app_content" class="app-content flex-column-fluid">
+@endsection
+
+@section('content')
+<div id="kt_app_content" class="app-content flex-column-fluid">
 								<!--begin::Hero-->
 								<div class="app-container container-xxl mb-20">
 									<div class="d-flex align-items-center bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-550px mx-4" style="background-image:url('/assets/media/demo/1600x1200/1.png')">
@@ -5009,8 +4968,8 @@ License: For each use you must have a valid license purchased only from above li
 											<!--begin::Heading-->
 											<div class="mb-10">
 												<!--begin::Title-->
-												<h3 class="fw-bolder text-gray-900 fs-3qx mb-6 ms-n1">Client 
-												<span class="ms-1 d-inline-flex position-relative mb-4">Experiences 
+												<h3 class="fw-bolder text-gray-900 fs-3qx mb-6 ms-n1">Client
+												<span class="ms-1 d-inline-flex position-relative mb-4">Experiences
 												<span class="position-absolute mt-3 text-color-primary">
 													<svg width="256" height="28" viewBox="0 0 256 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path d="M0 0.459016L43.4951 3.35807L96.3107 0.459016L173.981 3.35807L214.99 1.90854L252.472 0L252.188 5.17471C252.042 7.83329 252.251 10.4995 252.809 13.103L256 28H0V0.459016Z" fill="#257EE6" fill-opacity="0.2" />
@@ -5019,14 +4978,14 @@ License: For each use you must have a valid license purchased only from above li
 												<br />Stories of Partnership</h3>
 												<!--end::Title-->
 												<!--begin::Text-->
-												<span class="fw-semibold text-gray-700 fs-3">Get inspired by the stories of our clients achievements and 
+												<span class="fw-semibold text-gray-700 fs-3">Get inspired by the stories of our clients achievements and
 												<br />see how we can Help you succeed</span>
 												<!--end::Text-->
 											</div>
 											<!--end::Heading-->
 											<!--begin::Action-->
 											<div class="d-flex align-items-center gap-2 gap-lg-4">
-												<a href="#" class="btn btn-dark fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Get Started 
+												<a href="#" class="btn btn-dark fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Get Started
 												<i class="ki-duotone ki-black-right fs-2 ms-1 me-n2"></i></a>
 												<a href="{{ route('metronic.pages.contact') }}" class="btn border border-gray-300 fw-semibold">Contact Us</a>
 											</div>
@@ -5047,7 +5006,7 @@ License: For each use you must have a valid license purchased only from above li
 										<h3 class="text-gray-900 fw-bolder fs-2hx mb-3">Trusted by Over 100,000 Customers</h3>
 										<!--end::Title-->
 										<!--begin::Text-->
-										<p class="text-gray-600 fs-3">We believe brands are the cultural connection between 
+										<p class="text-gray-600 fs-3">We believe brands are the cultural connection between
 										<br />companiesand their communities.</p>
 										<!--end::Text-->
 									</div>
@@ -5137,7 +5096,7 @@ License: For each use you must have a valid license purchased only from above li
 										</div>
 										<!--end::Items-->
 										<!--begin::Title-->
-										<div class="text-gray-800 fw-bold fs-4 mt-4 mt-lg-8">Learn how can you Benefit from Keenthemes 
+										<div class="text-gray-800 fw-bold fs-4 mt-4 mt-lg-8">Learn how can you Benefit from Keenthemes
 										<a href="#" class="text-primary fw-semibold fs-4">Request a Demo</a></div>
 										<!--end::Title-->
 									</div>
@@ -5155,7 +5114,7 @@ License: For each use you must have a valid license purchased only from above li
 										<h3 class="text-gray-900 fw-bolder fs-2hx mb-3">Believe Me - Check What Clients Think Of Us</h3>
 										<!--end::Title-->
 										<!--begin::Text-->
-										<p class="text-gray-600 fs-3">We pride ourselves on providing exceptional service to our customers, 
+										<p class="text-gray-600 fs-3">We pride ourselves on providing exceptional service to our customers,
 										<br />who always keep in touch with us.</p>
 										<!--end::Text-->
 									</div>
@@ -5273,8 +5232,8 @@ License: For each use you must have a valid license purchased only from above li
 															<span class="text-white opacity-25 fs-2x fw-bold mb-6">Reported direct time savings</span>
 															<!--end::Title-->
 															<!--begin::Text-->
-															<span class="text-white opacity-75 fs-3 fw-semibold">Majority of our clients have saved up to 
-															<br />98% each time due to good service and 
+															<span class="text-white opacity-75 fs-3 fw-semibold">Majority of our clients have saved up to
+															<br />98% each time due to good service and
 															<br />feedback from developers.</span>
 															<!--end::Text-->
 														</div>
@@ -5291,8 +5250,8 @@ License: For each use you must have a valid license purchased only from above li
 															<span class="text-white opacity-25 fs-2x fw-bold mb-6">Always here when you are</span>
 															<!--end::Title-->
 															<!--begin::Text-->
-															<span class="text-white opacity-75 fs-3 fw-semibold">The service works 24/7. Customer 
-															<br />support at any time, help and advice at 
+															<span class="text-white opacity-75 fs-3 fw-semibold">The service works 24/7. Customer
+															<br />support at any time, help and advice at
 															<br />any convenient moment for you.</span>
 															<!--end::Text-->
 														</div>
@@ -5309,8 +5268,8 @@ License: For each use you must have a valid license purchased only from above li
 															<span class="text-white opacity-25 fs-2x fw-bold mb-6">Consistently ranked above Jira</span>
 															<!--end::Title-->
 															<!--begin::Text-->
-															<span class="text-white opacity-75 fs-3 fw-semibold">Our team works at the highest level, which 
-															<br />shows our best ranking in many categories, 
+															<span class="text-white opacity-75 fs-3 fw-semibold">Our team works at the highest level, which
+															<br />shows our best ranking in many categories,
 															<br />ahead of the compettition.</span>
 															<!--end::Text-->
 														</div>
@@ -5350,7 +5309,7 @@ License: For each use you must have a valid license purchased only from above li
 										<h3 class="text-gray-900 fw-bolder fs-2hx mb-3">We’ve Helped Businesses Like Yours</h3>
 										<!--end::Title-->
 										<!--begin::Text-->
-										<p class="text-gray-600 fs-3">Find out how we’ve customized our solutions to meet the 
+										<p class="text-gray-600 fs-3">Find out how we’ve customized our solutions to meet the
 										<br />unique needs of our clients.</p>
 										<!--end::Text-->
 									</div>
@@ -5358,7 +5317,7 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Slider-->
 									<div class="tns tns-circle-nav testimonials-slider-quote">
 										<!--begin::Slider wrapper-->
-										<div data-tns="true" data-tns-nav-position="bottom" data-tns-controls="false" data-tns-speed="2000" data-tns-items="1" data-tns-responsive="{1200: {items: 3}, 992: {items: 3}, 600: {items: 3}}">&gt; 
+										<div data-tns="true" data-tns-nav-position="bottom" data-tns-controls="false" data-tns-speed="2000" data-tns-items="1" data-tns-responsive="{1200: {items: 3}, 992: {items: 3}, 600: {items: 3}}">&gt;
 										<!--begin::Items-->
 										<div class="d-flex flex-wrap">
 											<!--begin::Item-->
@@ -5639,7 +5598,7 @@ License: For each use you must have a valid license purchased only from above li
 										<h3 class="text-gray-900 fw-bolder fs-2hx mb-3">Our Amazing Customers is Worldwide</h3>
 										<!--end::Title-->
 										<!--begin::Text-->
-										<p class="text-gray-600 fs-3">No matter where you are, we are always accessible to fulfill 
+										<p class="text-gray-600 fs-3">No matter where you are, we are always accessible to fulfill
 										<br />your unique ideas.</p>
 										<!--end::Text-->
 									</div>
@@ -5659,8 +5618,8 @@ License: For each use you must have a valid license purchased only from above li
 											<!--begin::Heading-->
 											<div class="mb-10 pt-xl-13">
 												<!--begin::Title-->
-												<h3 class="fw-bolder text-white fs-3qx mb-10 ms-n1">Build a 
-												<span class="ms-1 d-inline-flex position-relative mb-4">Stunning Site 
+												<h3 class="fw-bolder text-white fs-3qx mb-10 ms-n1">Build a
+												<span class="ms-1 d-inline-flex position-relative mb-4">Stunning Site
 												<span class="position-absolute bottom-0 mb-n3 text-color-white">
 													<svg width="281" height="28" viewBox="0 0 281 28" fill="none" xmlns="http://www.w3.org/2000/svg">
 														<path opacity="0.2" d="M0 0.459016L47.7427 3.35807L105.716 0.459016L190.971 3.35807L235.985 1.90854L277.128 0L276.839 4.79037C276.664 7.70145 276.914 10.6226 277.581 13.4615L281 28H0V0.459016Z" fill="white" />
@@ -5669,14 +5628,14 @@ License: For each use you must have a valid license purchased only from above li
 												<br />with us Today</h3>
 												<!--end::Title-->
 												<!--begin::Text-->
-												<span class="fw-semibold text-white opacity-75 fs-3">If you're ready to experience the exceptional service and results 
+												<span class="fw-semibold text-white opacity-75 fs-3">If you're ready to experience the exceptional service and results
 												<br />that our customers rave about, contact us today to learn more.</span>
 												<!--end::Text-->
 											</div>
 											<!--end::Heading-->
 											<!--begin::Action-->
 											<div class="d-flex align-items-center gap-2 gap-lg-4">
-												<a href="#" class="btn btn-primary fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Get Started 
+												<a href="#" class="btn btn-primary fw-semibold px-4" data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Get Started
 												<i class="ki-duotone ki-black-right fs-2 ms-1 me-n2"></i></a>
 												<a href="{{ route('metronic.pages.contact') }}" class="btn bg-body fw-semibold">Contact Us</a>
 											</div>
@@ -5687,44 +5646,10 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Engage-->
 							</div>
-							<!--end::Content-->
-						</div>
-						<!--end::Content wrapper-->
-						<!--begin::Footer-->
-						<div id="kt_app_footer" class="app-footer">
-							<!--begin::Footer container-->
-							<div class="app-container container-xxl d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
-								<!--begin::Copyright-->
-								<div class="text-gray-900 order-2 order-md-1">
-									<span class="text-muted fw-semibold me-1">2026&copy;</span>
-									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
-								</div>
-								<!--end::Copyright-->
-								<!--begin::Menu-->
-								<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-									<li class="menu-item">
-										<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-									</li>
-									<li class="menu-item">
-										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
-									</li>
-									<li class="menu-item">
-										<a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
-									</li>
-								</ul>
-								<!--end::Menu-->
-							</div>
-							<!--end::Footer container-->
-						</div>
-						<!--end::Footer-->
-					</div>
-					<!--end:::Main-->
-				</div>
-				<!--end::Wrapper-->
-			</div>
-			<!--end::Page-->
-		</div>
-		<!--end::App-->
+@endsection
+
+@section('body_extras')
+<!--end::App-->
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
 			<i class="ki-duotone ki-arrow-up">
@@ -5757,7 +5682,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Heading-->
 						<div class="mb-13 text-center">
 							<h1 class="mb-3">Upgrade a Plan</h1>
-							<div class="text-muted fw-semibold fs-5">If you need more info, please check 
+							<div class="text-muted fw-semibold fs-5">If you need more info, please check
 							<a href="#" class="link-primary fw-bold">Pricing Guidelines</a>.</div>
 						</div>
 						<!--end::Heading-->
@@ -5796,7 +5721,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="39" data-kt-plan-price-annual="399">39</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -5823,7 +5748,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="339" data-kt-plan-price-annual="3399">339</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -5840,7 +5765,7 @@ License: For each use you must have a valid license purchased only from above li
 												<!--end::Radio-->
 												<!--begin::Info-->
 												<div class="flex-grow-1">
-													<div class="d-flex align-items-center fs-2 fw-bold flex-wrap">Enterprise 
+													<div class="d-flex align-items-center fs-2 fw-bold flex-wrap">Enterprise
 													<span class="badge badge-light-success ms-2 py-2 px-3 fs-7">Popular</span></div>
 													<div class="fw-semibold opacity-75">Best value for 1000+ team</div>
 												</div>
@@ -5851,7 +5776,7 @@ License: For each use you must have a valid license purchased only from above li
 											<div class="ms-5">
 												<span class="mb-2">$</span>
 												<span class="fs-3x fw-bold" data-kt-plan-price-month="999" data-kt-plan-price-annual="9999">999</span>
-												<span class="fs-7 opacity-50">/ 
+												<span class="fs-7 opacity-50">/
 												<span data-kt-element="period">Mon</span></span>
 											</div>
 											<!--end::Price-->
@@ -6213,7 +6138,7 @@ License: For each use you must have a valid license purchased only from above li
 								<span class="indicator-label">Upgrade Plan</span>
 								<!--end::Indicator label-->
 								<!--begin::Indicator progress-->
-								<span class="indicator-progress">Please wait... 
+								<span class="indicator-progress">Please wait...
 								<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 								<!--end::Indicator progress-->
 							</button>
@@ -6229,30 +6154,45 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Modal - Upgrade plan-->
 		<!--end::Modals-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "/assets/";</script>
+
 		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/js/scripts.bundle.js"></script>
+
+
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+
+
+
+
+
+
+
 		<!--end::Vendors Javascript-->
 		<!--begin::Custom Javascript(used for this page only)-->
-		<script src="assets/js/custom/pages/testimonials/testimonials-1.js"></script>
-		<script src="assets/js/widgets.bundle.js"></script>
-		<script src="assets/js/custom/widgets.js"></script>
-		<script src="assets/js/custom/apps/chat/chat.js"></script>
-		<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+
+
+
+
+
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
-</html>
+@endsection
+
+@section('page_scripts')
+<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="assets/js/custom/pages/testimonials/testimonials-1.js"></script>
+<script src="assets/js/widgets.bundle.js"></script>
+<script src="assets/js/custom/widgets.js"></script>
+<script src="assets/js/custom/apps/chat/chat.js"></script>
+<script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+@endsection

@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.3.3
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en">
-	<!--begin::Head-->
-	<head>
-<base href="../../" />
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-		<meta charset="utf-8" />
+@extends('layouts.metronic-document')
+
+@section('body_attributes')
+id="kt_body" class="app-blank"
+@endsection
+
+@section('head_assets')
+<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
+
 		<meta name="description" content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes" />
@@ -34,11 +25,10 @@ License: For each use you must have a valid license purchased only from above li
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_body" class="app-blank">
-		<!--begin::Theme mode setup on page load-->
+@endsection
+
+@section('body_content')
+<!--begin::Theme mode setup on page load-->
 		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
 		<!--end::Theme mode setup on page load-->
 		<!--begin::Root-->
@@ -206,7 +196,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Heading-->
 										<div class="pb-10 pb-lg-15">
 											<!--begin::Title-->
-											<h2 class="fw-bold d-flex align-items-center text-gray-900">Choose Account Type 
+											<h2 class="fw-bold d-flex align-items-center text-gray-900">Choose Account Type
 											<span class="ms-1" data-bs-toggle="tooltip" title="Billing is issued based on your selected account typ">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -216,7 +206,7 @@ License: For each use you must have a valid license purchased only from above li
 											</span></h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out
 											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -284,7 +274,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h2 class="fw-bold text-gray-900">Account Info</h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out
 											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -292,7 +282,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="mb-10 fv-row">
 											<!--begin::Label-->
-											<label class="d-flex align-items-center form-label mb-3">Specify Team Size 
+											<label class="d-flex align-items-center form-label mb-3">Specify Team Size
 											<span class="ms-1" data-bs-toggle="tooltip" title="Provide your team size to help us setup your billing">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -363,7 +353,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--begin::Input group-->
 										<div class="mb-0 fv-row">
 											<!--begin::Label-->
-											<label class="d-flex align-items-center form-label mb-5">Select Account Plan 
+											<label class="d-flex align-items-center form-label mb-5">Select Account Plan
 											<span class="ms-1" data-bs-toggle="tooltip" title="Monthly billing will be based on your account plan">
 												<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
 													<span class="path1"></span>
@@ -480,7 +470,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h2 class="fw-bold text-gray-900">Business Details</h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out
 											<a href="#" class="link-primary fw-bold">Help Page</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -569,7 +559,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h2 class="fw-bold text-gray-900">Billing Details</h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please check out 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please check out
 											<a href="#" class="text-primary fw-bold">Help Page</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -725,7 +715,7 @@ License: For each use you must have a valid license purchased only from above li
 											<h2 class="fw-bold text-gray-900">Your Are Done!</h2>
 											<!--end::Title-->
 											<!--begin::Notice-->
-											<div class="text-muted fw-semibold fs-6">If you need more info, please 
+											<div class="text-muted fw-semibold fs-6">If you need more info, please
 											<a href="{{ route('metronic.authentication.layouts.corporate.sign_in') }}" class="link-primary fw-bold">Sign In</a>.</div>
 											<!--end::Notice-->
 										</div>
@@ -750,7 +740,7 @@ License: For each use you must have a valid license purchased only from above li
 													<!--begin::Content-->
 													<div class="fw-semibold">
 														<h4 class="text-gray-900 fw-bold">We need your attention!</h4>
-														<div class="fs-6 text-gray-700">To start using great tools, please, 
+														<div class="fs-6 text-gray-700">To start using great tools, please,
 														<a href="{{ route('metronic.utilities.wizards.vertical') }}" class="fw-bold">Create Team Platform</a></div>
 													</div>
 													<!--end::Content-->
@@ -776,15 +766,15 @@ License: For each use you must have a valid license purchased only from above li
 									</div>
 									<div>
 										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="submit">
-											<span class="indicator-label">Submit 
+											<span class="indicator-label">Submit
 											<i class="ki-duotone ki-arrow-right fs-4 ms-2">
 												<span class="path1"></span>
 												<span class="path2"></span>
 											</i></span>
-											<span class="indicator-progress">Please wait... 
+											<span class="indicator-progress">Please wait...
 											<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 										</button>
-										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue 
+										<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Continue
 										<i class="ki-duotone ki-arrow-right fs-4 ms-1">
 											<span class="path1"></span>
 											<span class="path2"></span>
@@ -814,6 +804,4 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/custom/utilities/modals/create-account.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
-</html>
+@endsection

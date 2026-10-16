@@ -28,6 +28,14 @@ Dokumen ini merangkum pembaruan proyek template Metronic 8.3.3 Demo 1 yang diint
    - Memperbaiki beberapa tujuan tautan file manager dan customer yang sebelumnya tidak sesuai.
    - Lima halaman demo font ikon di `resources/views/template/src/plugins/keenicons` tetap berupa HTML karena merupakan berkas pendukung sumber plugin.
 
+6. **Penyelarasan layout dan navigasi**
+   - Menggunakan layout Blade bersama untuk halaman template agar bagian header, sidebar, toolbar, konten, dan footer konsisten.
+   - Memperbaiki status menu aktif di sidebar dan topbar agar mengikuti halaman yang sedang dibuka.
+   - Menyelaraskan toolbar Classic dengan toolbar halaman lain.
+   - Membuat layout khusus untuk lima halaman aside, menempatkan aside di bawah header dan toolbar, serta menjaga tombol Prebuilts, Get Help, dan Buy Now tetap terlihat.
+   - Membuat toolbar halaman aside mengisi area konten yang tersedia.
+   - Menambahkan `public/assets/css/metronic-layout.css` untuk penyesuaian layout bersama.
+
 ## Pemeriksaan
 
 - `php artisan route:list` menampilkan rute halaman Metronic yang terdaftar.
@@ -42,3 +50,4 @@ Dokumen ini merangkum pembaruan proyek template Metronic 8.3.3 Demo 1 yang diint
 ## Rilis
 
 - Tag rilis awal: `v1.0.0`.
+- Tag pembaruan layout Blade dan navigasi: `v1.1.0`.

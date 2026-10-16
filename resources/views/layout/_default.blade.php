@@ -1,47 +1,46 @@
-
 <!--begin::App-->
 <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
-    <!--begin::Page-->
-    <div class="app-page  flex-column flex-column-fluid " id="kt_app_page">     
-        
-            
-                    
-<!--layout-partial:layout/partials/_header.html-->
-@include('layout.partials._header')
-        <!--begin::Wrapper-->
-        <div class="app-wrapper  flex-column flex-row-fluid " id="kt_app_wrapper">          
-            
-            
-                  
-            
-            
-                                                
-<!--layout-partial:layout/partials/_sidebar.html-->
-@include('layout.partials._sidebar')
-            <!--begin::Main-->
-            <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
-                <!--begin::Content wrapper-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+        @hasSection('header')
+            @yield('header')
+        @else
+            @include('layout.partials._header')
+        @endif
+
+        <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+            @if (str_contains($__env->yieldContent('body_attributes'), 'data-kt-app-sidebar-enabled="true"'))
+                @hasSection('sidebar')
+                    @yield('sidebar')
+                @else
+                    @include('layout.partials._sidebar')
+                @endif
+            @endif
+
+            <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
                 <div class="d-flex flex-column flex-column-fluid">
-                                            
-<!--layout-partial:layout/partials/_toolbar.html-->
-@include('layout.partials._toolbar')
-<!--layout-partial:layout/partials/_content.html-->
-@include('layout.partials._content')
-                                    </div>
-                <!--end::Content wrapper-->
-                                    
-<!--layout-partial:layout/partials/_footer.html-->
-@include('layout.partials._footer')
-                            </div>
-            <!--end:::Main-->
-            
-                    </div>
-        <!--end::Wrapper-->
-        
+                    @hasSection('toolbar')
+                        @yield('toolbar')
+                    @else
+                        @include('layout.partials._toolbar')
+                    @endif
+
+                    @hasSection('content')
+                        @yield('content')
+                    @else
+                        @include('layout.partials._content')
+                    @endif
+                </div>
+
+                @hasSection('footer')
+                    @yield('footer')
+                @else
+                    @include('layout.partials._footer')
+                @endif
             </div>
-    <!--end::Page-->
+
+            @hasSection('aside')
+                @yield('aside')
+            @endif
+        </div>
     </div>
-<!--end::App-->
-    
-
-
+</div>

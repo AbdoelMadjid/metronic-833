@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.3.3
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en">
-	<!--begin::Head-->
-	<head>
-<base href="./" />
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-		<meta charset="utf-8" />
+@extends('layouts.metronic-document')
+
+@section('body_attributes')
+id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-body position-relative app-blank"
+@endsection
+
+@section('head_assets')
+<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
+
 		<meta name="description" content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes" />
@@ -34,11 +25,10 @@ License: For each use you must have a valid license purchased only from above li
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-body position-relative app-blank">
-		<!--begin::Theme mode setup on page load-->
+@endsection
+
+@section('body_content')
+<!--begin::Theme mode setup on page load-->
 		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
 		<!--end::Theme mode setup on page load-->
 		<!--begin::Root-->
@@ -139,8 +129,8 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Heading-->
 						<div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
 							<!--begin::Title-->
-							<h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">Build An Outstanding Solutions 
-							<br />with 
+							<h1 class="text-white lh-base fw-bold fs-2x fs-lg-3x mb-15">Build An Outstanding Solutions
+							<br />with
 							<span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
 								<span id="kt_landing_hero_text">The Best Theme Ever</span>
 							</span></h1>
@@ -217,7 +207,7 @@ License: For each use you must have a valid license purchased only from above li
 						<h3 class="fs-2hx text-gray-900 mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">How it Works</h3>
 						<!--end::Title-->
 						<!--begin::Text-->
-						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool 
+						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
 						<br />for different amazing and great useful admin</div>
 						<!--end::Text-->
 					</div>
@@ -242,8 +232,8 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
-								<br />by using single tool for different 
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
+								<br />by using single tool for different
 								<br />amazing and great</div>
 								<!--end::Description-->
 							</div>
@@ -268,8 +258,8 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
-								<br />by using single tool for different 
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
+								<br />by using single tool for different
 								<br />amazing and great</div>
 								<!--end::Description-->
 							</div>
@@ -294,8 +284,8 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks 
-								<br />by using single tool for different 
+								<div class="fw-semibold fs-6 fs-lg-4 text-muted">Save thousands to millions of bucks
+								<br />by using single tool for different
 								<br />amazing and great</div>
 								<!--end::Description-->
 							</div>
@@ -365,7 +355,7 @@ License: For each use you must have a valid license purchased only from above li
 							<h3 class="fs-2hx text-white fw-bold mb-5">We Make Things Better</h3>
 							<!--end::Title-->
 							<!--begin::Description-->
-							<div class="fs-5 text-gray-700 fw-bold">Save thousands to millions of bucks by using single tool 
+							<div class="fs-5 text-gray-700 fw-bold">Save thousands to millions of bucks by using single tool
 							<br />for different amazing and great useful admin</div>
 							<!--end::Description-->
 						</div>
@@ -451,9 +441,9 @@ License: For each use you must have a valid license purchased only from above li
 						<!--end::Statistics-->
 						<!--begin::Testimonial-->
 						<div class="fs-2 fw-semibold text-muted text-center mb-3">
-						<span class="fs-1 lh-1 text-gray-700">“</span>When you care about your topic, you’ll write about it in a 
+						<span class="fs-1 lh-1 text-gray-700">“</span>When you care about your topic, you’ll write about it in a
 						<br />
-						<span class="text-gray-700 me-1">more powerful</span>, emotionally expressive way 
+						<span class="text-gray-700 me-1">more powerful</span>, emotionally expressive way
 						<span class="fs-1 lh-1 text-gray-700">“</span></div>
 						<!--end::Testimonial-->
 						<!--begin::Author-->
@@ -1064,7 +1054,7 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Heading-->
 							<div class="mb-13 text-center">
 								<h1 class="fs-2hx fw-bold text-white mb-5" id="pricing" data-kt-scroll-offset="{default: 100, lg: 150}">Clear Pricing Makes it Easy</h1>
-								<div class="text-gray-600 fw-semibold fs-5">Save thousands to millions of bucks by using single tool for different 
+								<div class="text-gray-600 fw-semibold fs-5">Save thousands to millions of bucks by using single tool for different
 								<br />amazing and outstanding cool and great useful admin</div>
 							</div>
 							<!--end::Heading-->
@@ -1344,7 +1334,7 @@ License: For each use you must have a valid license purchased only from above li
 						<h3 class="fs-2hx text-gray-900 mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">What Our Clients Say</h3>
 						<!--end::Title-->
 						<!--begin::Description-->
-						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool 
+						<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
 						<br />for different amazing and great useful admin</div>
 						<!--end::Description-->
 					</div>
@@ -1377,7 +1367,7 @@ License: For each use you must have a valid license purchased only from above li
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template
 									<br />and the most well structured</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
@@ -1430,7 +1420,7 @@ License: For each use you must have a valid license purchased only from above li
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template
 									<br />and the most well structured</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
@@ -1483,7 +1473,7 @@ License: For each use you must have a valid license purchased only from above li
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template 
+									<div class="fs-2 fw-bold text-gray-900 mb-3">This is by far the cleanest template
 									<br />and the most well structured</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
@@ -1517,7 +1507,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Content-->
 						<div class="my-2 me-5">
 							<!--begin::Title-->
-							<div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">Start With Metronic Today, 
+							<div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">Start With Metronic Today,
 							<span class="fw-normal">Speed Up Development!</span></div>
 							<!--end::Title-->
 							<!--begin::Description-->
@@ -1557,7 +1547,7 @@ License: For each use you must have a valid license purchased only from above li
 									<h2 class="text-white">Would you need a Custom License?</h2>
 									<!--end::Title-->
 									<!--begin::Text-->
-									<span class="fw-normal fs-4 text-gray-700">Email us to 
+									<span class="fw-normal fs-4 text-gray-700">Email us to
 									<a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">support@keenthemes.com</a></span>
 									<!--end::Text-->
 								</div>
@@ -1568,7 +1558,7 @@ License: For each use you must have a valid license purchased only from above li
 									<h2 class="text-white">How About a Custom Project?</h2>
 									<!--end::Title-->
 									<!--begin::Text-->
-									<span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service. 
+									<span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
 									<a href="{{ route('metronic.pages.user_profile.overview') }}" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a></span>
 									<!--end::Text-->
 								</div>
@@ -1722,6 +1712,4 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/custom/pages/pricing/general.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
-</html>
+@endsection

@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: MetronicProduct Version: 8.3.3
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
-<html lang="en">
-	<!--begin::Head-->
-	<head>
-<base href="../../../" />
-		<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-		<meta charset="utf-8" />
+@extends('layouts.metronic-document')
+
+@section('body_attributes')
+id="kt_body" class="app-blank"
+@endsection
+
+@section('head_assets')
+<title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
+
 		<meta name="description" content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes" />
@@ -34,11 +25,10 @@ License: For each use you must have a valid license purchased only from above li
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
-	</head>
-	<!--end::Head-->
-	<!--begin::Body-->
-	<body id="kt_body" class="app-blank">
-		<!--begin::Theme mode setup on page load-->
+@endsection
+
+@section('body_content')
+<!--begin::Theme mode setup on page load-->
 		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
 		<!--end::Theme mode setup on page load-->
 		<!--begin::Root-->
@@ -92,7 +82,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex flex-center">
 									<button type="button" id="kt_sing_in_two_factor_submit" class="btn btn-lg btn-primary fw-bold">
 										<span class="indicator-label">Submit</span>
-										<span class="indicator-progress">Please wait... 
+										<span class="indicator-progress">Please wait...
 										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 									</button>
 								</div>
@@ -207,10 +197,10 @@ License: For each use you must have a valid license purchased only from above li
 						<h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7">Fast, Efficient and Productive</h1>
 						<!--end::Title-->
 						<!--begin::Text-->
-						<div class="d-none d-lg-block text-white fs-base text-center">In this kind of post, 
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a>introduces a person they’ve interviewed 
-						<br />and provides some background information about 
-						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a>and their 
+						<div class="d-none d-lg-block text-white fs-base text-center">In this kind of post,
+						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the blogger</a>introduces a person they’ve interviewed
+						<br />and provides some background information about
+						<a href="#" class="opacity-75-hover text-warning fw-bold me-1">the interviewee</a>and their
 						<br />work following this is a transcript of the interview.</div>
 						<!--end::Text-->
 					</div>
@@ -231,6 +221,4 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/custom/authentication/sign-in/two-factor.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
-</html>
+@endsection
