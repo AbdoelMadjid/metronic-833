@@ -1,0 +1,164 @@
+
+<!--begin::Row-->
+<div class="row g-10"> 
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.welcome_message') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Welcome	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-welcome.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.subscription_confirmed') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Subscription Confirmed	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-subscriptionconfirmed.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.reset_password') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Reset Password	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-resetpassword.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.card_declined') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Card Declined	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-creditcarddeclined.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.promo_1') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Promotion 1	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-promo1.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+
+<!--begin::Preview-->
+<a 
+	href="{{ route('metronic.authentication.email.promo_2') }}" 
+	data-kt-href="true" 
+	class="preview-thumbnail bg-light border d-flex flex-column rounded-3 hover-elevate-up overflow-hidden" 
+>
+	<!--begin::Title-->
+	<h3 class="ps-12 pt-9 mb-7 text-gray-900 fw-bold letter-spacing fs-4">
+		Promotion 2	</h3>
+	<!--end::Title-->
+	<!--begin::Thumbnail-->
+	<span class="app-prebuilts-thumbnail rounded ms-12 mb-n6 mb-lg-n15 me-n6 mh-350px overflow-hidden">
+		<img src="{{ asset('assets/media/preview/demos/placeholder.jpg') }}" data-src="{{ asset('assets/media/preview/prebuilts/pages/email-promo2.png') }}" class="lozad w-100 rounded" alt=""/>
+	</span>
+	<!--end::Thumbnail-->
+</a>
+<!--end::Preview-->
+
+		</div>
+		<!--end::Col-->	
+			
+		<!--begin::Col-->
+		<div class="col-lg-4">
+			
+<!--layout-partial:partials/engage-new/prebuilts/content/image/___preview.html-->
+@include('partials.engage-new.prebuilts.content.image.___preview')
+		</div>
+		<!--end::Col-->	
+	</div>
+<!--end::Row-->
+
